@@ -9,28 +9,6 @@ Consequently, our taxonomy can aid in selection and development of adequate grap
 
 
 
-### Python config on Mila cluster
-
-```bash
-module load cuda/11.2/cudnn/8.1 miniconda/3
-conda-activate
-conda create -n gtaxogym python=3.9
-conda activate gtaxogym
-
-conda install pytorch=1.11 torchvision torchaudio cudatoolkit=11.3 -c pytorch -c nvidia
-conda install pyg=2.0.4 -c pyg -c conda-forge
-conda install numba pandas scikit-learn
-
-pip install ogb
-pip install deepsnap
-pip install wandb
-
-conda clean --all
-
-# (optional) create alias for activating the environment:
-alias activateGTaxoGym="module load cuda/11.2/cudnn/8.1 miniconda/3 && conda activate gtaxogym"
-```
-
 ### Installation
 We use [GraphGym from PyG2](https://pytorch-geometric.readthedocs.io/en/2.0.4/notes/graphgym.html) to manage our experimental setup. PyG v2.0.4 is required.
 
@@ -66,7 +44,7 @@ python main.py --cfg configs/example.yaml --repeat 3
 python main.py --cfg tests/configs/graph/nci1.yaml perturbation.type Fragmented-k2 train.mode custom wandb.use True name_tag test01
 ```
 
-## Unit tests
+### Unit tests
 
 To run all unit tests, execute from the project root directory:
 
