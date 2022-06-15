@@ -1,0 +1,24 @@
+#!/bin/bash --login
+
+#SBATCH -N 1
+#SBATCH -c 1
+#SBATCH -t 3:55:00
+#SBATCH --mem=32GB
+#SBATCH --gres=gpu:v100:1
+#SBATCH --array=1-10%1  # limit to one job to prevent result writting error
+#SBATCH -A cmse
+#SBATCH -o ../../slurm_history/slurm-%x-%A_%a.out
+
+
+if [[ $CONDA_DEFAULT_ENV != gtaxogym ]]; then
+    conda activate gtaxogym
+fi
+
+cd $SLURM_SUBMIT_DIR
+cd ../..
+
+i=$SLURM_ARRAY_TASK_ID
+full_script="$@ seed $i"
+
+echo $full_script
+eval $full_script

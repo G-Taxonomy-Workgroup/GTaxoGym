@@ -1,0 +1,45 @@
+out_dir: results
+metric_best: auc
+dataset:
+  task: graph
+  transductive: False
+  task_type: classification
+  split_mode: cv-stratifiedkfold-10
+  split_dir: splits
+nx:
+  augment_feature_repr: original
+  augment_feature: [node_clustering_coefficient, node_pagerank]
+  augment_feature_dims: [10, 10]
+  augment_label: graph_path_len
+  augment_label_dims: 5
+perturbation:
+  type: none
+  FiedlerFragmentation_method: full
+train:
+  batch_size: 64
+  eval_period: 1
+  ckpt_period: 100
+  sampler: full_batch
+model:
+  type: gnn
+  loss_fun: cross_entropy
+  edge_decoding: dot
+  graph_pooling: mean
+gnn:
+  layers_pre_mp: 1
+  layers_mp: 5
+  layers_post_mp: 2
+  dim_inner: 128
+  layer_type: resgatedgraphconv
+  stage_type: skipsum
+  batchnorm: True
+  act: relu
+  dropout: 0.0
+  agg: mean
+  normalize_adj: False
+optim:
+  optimizer: adam
+  base_lr: 0.001
+  max_epoch: 200
+  weight_decay: 0.0
+  lr_decay: 0.99

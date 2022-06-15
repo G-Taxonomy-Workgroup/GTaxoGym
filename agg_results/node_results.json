@@ -1,0 +1,6050 @@
+[
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.045,
+        "score-accuracy": 0.9973,
+        "score-auc": 0.9998
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0337,
+        "score-accuracy": 0.9625,
+        "score-auc": 0.9918
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0336,
+        "score-accuracy": 0.9556,
+        "score-auc": 0.9881
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.3095,
+        "score-accuracy": 0.9994,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.2965,
+        "score-accuracy": 0.9796,
+        "score-auc": 0.9989
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.2978,
+        "score-accuracy": 0.9772,
+        "score-auc": 0.9981
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0186,
+        "score-accuracy": 0.9956,
+        "score-precision": 0.995,
+        "score-recall": 0.9971,
+        "score-f1": 0.996,
+        "score-auc": 0.9996
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.011,
+        "score-accuracy": 0.9143,
+        "score-precision": 0.926,
+        "score-recall": 0.9176,
+        "score-f1": 0.9215,
+        "score-auc": 0.9576
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0109,
+        "score-accuracy": 0.8829,
+        "score-precision": 0.9006,
+        "score-recall": 0.8828,
+        "score-f1": 0.8914,
+        "score-auc": 0.9402
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0349,
+        "score-accuracy": 0.9988,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0258,
+        "score-accuracy": 0.9532,
+        "score-auc": 0.9967
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0256,
+        "score-accuracy": 0.9437,
+        "score-auc": 0.9905
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0463,
+        "score-accuracy": 0.9332,
+        "score-precision": 0.8528,
+        "score-recall": 0.7653,
+        "score-f1": 0.7851,
+        "score-auc": 0.9227
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0322,
+        "score-accuracy": 0.904,
+        "score-precision": 0.8022,
+        "score-recall": 0.7138,
+        "score-f1": 0.7333,
+        "score-auc": 0.8945
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0322,
+        "score-accuracy": 0.9029,
+        "score-precision": 0.7949,
+        "score-recall": 0.7056,
+        "score-f1": 0.7264,
+        "score-auc": 0.8904
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0292,
+        "score-accuracy": 0.9619,
+        "score-precision": 0.9769,
+        "score-recall": 0.937,
+        "score-f1": 0.9562,
+        "score-auc": 0.9965
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0178,
+        "score-accuracy": 0.8953,
+        "score-precision": 0.8914,
+        "score-recall": 0.8694,
+        "score-f1": 0.8798,
+        "score-auc": 0.9365
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0178,
+        "score-accuracy": 0.8772,
+        "score-precision": 0.8712,
+        "score-recall": 0.8496,
+        "score-f1": 0.8598,
+        "score-auc": 0.917
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.02,
+        "score-accuracy": 0.9456,
+        "score-precision": 0.9863,
+        "score-recall": 0.7867,
+        "score-f1": 0.8542,
+        "score-auc": 0.9552
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0109,
+        "score-accuracy": 0.8813,
+        "score-precision": 0.8032,
+        "score-recall": 0.6667,
+        "score-f1": 0.7086,
+        "score-auc": 0.8822
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0108,
+        "score-accuracy": 0.8699,
+        "score-precision": 0.7975,
+        "score-recall": 0.6542,
+        "score-f1": 0.6882,
+        "score-auc": 0.8762
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0452,
+        "score-accuracy": 0.9758,
+        "score-auc": 0.997
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0366,
+        "score-accuracy": 0.3066,
+        "score-auc": 0.674
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0364,
+        "score-accuracy": 0.3016,
+        "score-auc": 0.6586
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0349,
+        "score-accuracy": 0.9856,
+        "score-auc": 0.9993
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0276,
+        "score-accuracy": 0.9567,
+        "score-auc": 0.9939
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0238,
+        "score-accuracy": 0.9481,
+        "score-auc": 0.9908
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0243,
+        "score-accuracy": 0.8616,
+        "score-auc": 0.9831
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0166,
+        "score-accuracy": 0.6187,
+        "score-auc": 0.8418
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0167,
+        "score-accuracy": 0.5884,
+        "score-auc": 0.8238
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0206,
+        "score-accuracy": 0.9536,
+        "score-auc": 0.9962
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0118,
+        "score-accuracy": 0.3434,
+        "score-auc": 0.7272
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0119,
+        "score-accuracy": 0.3378,
+        "score-auc": 0.7251
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0323,
+        "score-accuracy": 0.7996,
+        "score-precision": 0.8181,
+        "score-recall": 0.8652,
+        "score-f1": 0.8397,
+        "score-auc": 0.8994
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0208,
+        "score-accuracy": 0.7594,
+        "score-precision": 0.7841,
+        "score-recall": 0.8319,
+        "score-f1": 0.8058,
+        "score-auc": 0.849
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0206,
+        "score-accuracy": 0.7594,
+        "score-precision": 0.7845,
+        "score-recall": 0.8309,
+        "score-f1": 0.8058,
+        "score-auc": 0.8401
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0148,
+        "score-accuracy": 0.9149,
+        "score-auc": 0.9745
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0068,
+        "score-accuracy": 0.578,
+        "score-auc": 0.8069
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0068,
+        "score-accuracy": 0.6405,
+        "score-auc": 0.7525
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0156,
+        "score-accuracy": 0.8918,
+        "score-precision": 0.9784,
+        "score-recall": 0.7024,
+        "score-f1": 0.8123,
+        "score-auc": 0.9399
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0084,
+        "score-accuracy": 0.8445,
+        "score-precision": 0.8427,
+        "score-recall": 0.6304,
+        "score-f1": 0.7106,
+        "score-auc": 0.8714
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0084,
+        "score-accuracy": 0.8599,
+        "score-precision": 0.8539,
+        "score-recall": 0.6672,
+        "score-f1": 0.7451,
+        "score-auc": 0.8815
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0882,
+        "score-accuracy": 0.9341,
+        "score-auc": 0.5385
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.06,
+        "score-accuracy": 0.9342,
+        "score-auc": 0.5407
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0602,
+        "score-accuracy": 0.9342,
+        "score-auc": 0.5316
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0194,
+        "score-accuracy": 0.9849,
+        "score-auc": 0.9996
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0101,
+        "score-accuracy": 0.9201,
+        "score-auc": 0.9906
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0103,
+        "score-accuracy": 0.9111,
+        "score-auc": 0.9751
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.7208,
+        "score-accuracy": 0.9975,
+        "score-auc": 0.9998
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.6833,
+        "score-accuracy": 0.9872,
+        "score-auc": 0.9985
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.6832,
+        "score-accuracy": 0.9843,
+        "score-auc": 0.9976
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0223,
+        "score-accuracy": 0.9131,
+        "score-precision": 0.9802,
+        "score-recall": 0.714,
+        "score-f1": 0.8136,
+        "score-auc": 0.941
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.012,
+        "score-accuracy": 0.8538,
+        "score-precision": 0.8571,
+        "score-recall": 0.642,
+        "score-f1": 0.7173,
+        "score-auc": 0.8824
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.012,
+        "score-accuracy": 0.8469,
+        "score-precision": 0.8552,
+        "score-recall": 0.6164,
+        "score-f1": 0.6963,
+        "score-auc": 0.8614
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.4193,
+        "score-accuracy": 0.9948,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.4146,
+        "score-accuracy": 0.9145,
+        "score-auc": 0.9943
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.4112,
+        "score-accuracy": 0.9022,
+        "score-auc": 0.9856
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0446,
+        "score-accuracy": 0.9667,
+        "score-auc": 0.9978
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0335,
+        "score-accuracy": 0.511,
+        "score-auc": 0.7346
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0334,
+        "score-accuracy": 0.4936,
+        "score-auc": 0.7115
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0842,
+        "score-accuracy": 0.9956,
+        "score-auc": 0.9998
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0745,
+        "score-accuracy": 0.9366,
+        "score-auc": 0.979
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0749,
+        "score-accuracy": 0.9271,
+        "score-auc": 0.9669
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0365,
+        "score-accuracy": 0.9253,
+        "score-auc": 0.9941
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0249,
+        "score-accuracy": 0.5916,
+        "score-auc": 0.8632
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0253,
+        "score-accuracy": 0.5855,
+        "score-auc": 0.8552
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0264,
+        "score-accuracy": 0.5416,
+        "score-auc": 0.7594
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0185,
+        "score-accuracy": 0.2573,
+        "score-auc": 0.5403
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0184,
+        "score-accuracy": 0.2516,
+        "score-auc": 0.5319
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0564,
+        "score-accuracy": 0.9365,
+        "score-auc": 0.5307
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0367,
+        "score-accuracy": 0.9377,
+        "score-auc": 0.5297
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0342,
+        "score-accuracy": 0.9377,
+        "score-auc": 0.5248
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0487,
+        "score-accuracy": 0.9356,
+        "score-auc": 0.5105
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0302,
+        "score-accuracy": 0.9338,
+        "score-auc": 0.5193
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0288,
+        "score-accuracy": 0.9333,
+        "score-auc": 0.5057
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0279,
+        "score-accuracy": 0.847,
+        "score-precision": 0.9727,
+        "score-recall": 0.5992,
+        "score-f1": 0.7298,
+        "score-auc": 0.91
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0168,
+        "score-accuracy": 0.7976,
+        "score-precision": 0.8692,
+        "score-recall": 0.5372,
+        "score-f1": 0.6521,
+        "score-auc": 0.8451
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0167,
+        "score-accuracy": 0.7902,
+        "score-precision": 0.8588,
+        "score-recall": 0.5369,
+        "score-f1": 0.6513,
+        "score-auc": 0.8356
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0549,
+        "score-accuracy": 0.9709,
+        "score-auc": 0.9985
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.043,
+        "score-accuracy": 0.9236,
+        "score-auc": 0.9884
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0431,
+        "score-accuracy": 0.9159,
+        "score-auc": 0.984
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0611,
+        "score-accuracy": 0.6881,
+        "score-auc": 0.9161
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0497,
+        "score-accuracy": 0.4778,
+        "score-auc": 0.744
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0497,
+        "score-accuracy": 0.4691,
+        "score-auc": 0.742
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.1682,
+        "score-accuracy": 0.5382,
+        "score-auc": 0.6758
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.1391,
+        "score-accuracy": 0.4279,
+        "score-auc": 0.5915
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.1409,
+        "score-accuracy": 0.4276,
+        "score-auc": 0.5923
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0153,
+        "score-accuracy": 0.8825,
+        "score-auc": 0.9675
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0071,
+        "score-accuracy": 0.55,
+        "score-auc": 0.7717
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.007,
+        "score-accuracy": 0.4706,
+        "score-auc": 0.6566
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0355,
+        "score-accuracy": 0.9859,
+        "score-auc": 0.9987
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0225,
+        "score-accuracy": 0.9539,
+        "score-auc": 0.9919
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0227,
+        "score-accuracy": 0.9505,
+        "score-auc": 0.9888
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.0206,
+        "score-accuracy": 0.9975,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0117,
+        "score-accuracy": 0.9797,
+        "score-auc": 0.9988
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0116,
+        "score-accuracy": 0.9747,
+        "score-auc": 0.9919
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "train",
+        "score-time_iter": 0.017,
+        "score-accuracy": 0.9253,
+        "score-auc": 0.9716
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "val",
+        "score-time_iter": 0.0073,
+        "score-accuracy": 0.4458,
+        "score-auc": 0.6728
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_Fragmented-k2",
+        "Split": "test",
+        "score-time_iter": 0.0071,
+        "score-accuracy": 0.3892,
+        "score-auc": 0.5712
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0462,
+        "score-accuracy": 0.9956,
+        "score-auc": 0.9994
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0336,
+        "score-accuracy": 0.9614,
+        "score-auc": 0.991
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0335,
+        "score-accuracy": 0.957,
+        "score-auc": 0.9867
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.305,
+        "score-accuracy": 0.9989,
+        "score-auc": 0.9999
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.2958,
+        "score-accuracy": 0.9802,
+        "score-auc": 0.999
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.3034,
+        "score-accuracy": 0.9761,
+        "score-auc": 0.9978
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0192,
+        "score-accuracy": 0.9356,
+        "score-precision": 0.954,
+        "score-recall": 0.9243,
+        "score-f1": 0.938,
+        "score-auc": 0.9732
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0112,
+        "score-accuracy": 0.8638,
+        "score-precision": 0.8873,
+        "score-recall": 0.8601,
+        "score-f1": 0.8727,
+        "score-auc": 0.9119
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0111,
+        "score-accuracy": 0.8485,
+        "score-precision": 0.8711,
+        "score-recall": 0.844,
+        "score-f1": 0.8566,
+        "score-auc": 0.8956
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0332,
+        "score-accuracy": 0.9923,
+        "score-auc": 0.9996
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0263,
+        "score-accuracy": 0.9565,
+        "score-auc": 0.9964
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0263,
+        "score-accuracy": 0.941,
+        "score-auc": 0.97
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0635,
+        "score-accuracy": 0.8149,
+        "score-precision": 0.7335,
+        "score-recall": 0.4508,
+        "score-f1": 0.5426,
+        "score-auc": 0.8535
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0425,
+        "score-accuracy": 0.8088,
+        "score-precision": 0.7443,
+        "score-recall": 0.4343,
+        "score-f1": 0.5303,
+        "score-auc": 0.8484
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0426,
+        "score-accuracy": 0.8086,
+        "score-precision": 0.7258,
+        "score-recall": 0.4322,
+        "score-f1": 0.5239,
+        "score-auc": 0.8457
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0302,
+        "score-accuracy": 0.9675,
+        "score-precision": 0.9822,
+        "score-recall": 0.9443,
+        "score-f1": 0.9626,
+        "score-auc": 0.9975
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.018,
+        "score-accuracy": 0.9008,
+        "score-precision": 0.8944,
+        "score-recall": 0.8806,
+        "score-f1": 0.8867,
+        "score-auc": 0.9402
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.018,
+        "score-accuracy": 0.8832,
+        "score-precision": 0.8733,
+        "score-recall": 0.8635,
+        "score-f1": 0.8677,
+        "score-auc": 0.9195
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0174,
+        "score-accuracy": 0.9529,
+        "score-precision": 0.9932,
+        "score-recall": 0.8128,
+        "score-f1": 0.8915,
+        "score-auc": 0.9814
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0099,
+        "score-accuracy": 0.8936,
+        "score-precision": 0.8534,
+        "score-recall": 0.6796,
+        "score-f1": 0.7518,
+        "score-auc": 0.9064
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.01,
+        "score-accuracy": 0.8881,
+        "score-precision": 0.8407,
+        "score-recall": 0.6745,
+        "score-f1": 0.7451,
+        "score-auc": 0.8929
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0437,
+        "score-accuracy": 0.98,
+        "score-auc": 0.9989
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0345,
+        "score-accuracy": 0.3152,
+        "score-auc": 0.6823
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0348,
+        "score-accuracy": 0.3141,
+        "score-auc": 0.6734
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0324,
+        "score-accuracy": 0.9735,
+        "score-auc": 0.999
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0231,
+        "score-accuracy": 0.9486,
+        "score-auc": 0.9955
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0229,
+        "score-accuracy": 0.94,
+        "score-auc": 0.9932
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0234,
+        "score-accuracy": 0.8973,
+        "score-auc": 0.99
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.016,
+        "score-accuracy": 0.6372,
+        "score-auc": 0.8472
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0159,
+        "score-accuracy": 0.6055,
+        "score-auc": 0.8353
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0196,
+        "score-accuracy": 0.9807,
+        "score-auc": 0.9993
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0123,
+        "score-accuracy": 0.4622,
+        "score-auc": 0.7991
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0123,
+        "score-accuracy": 0.4547,
+        "score-auc": 0.7975
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0338,
+        "score-accuracy": 0.9502,
+        "score-precision": 0.965,
+        "score-recall": 0.9526,
+        "score-f1": 0.9585,
+        "score-auc": 0.9922
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0226,
+        "score-accuracy": 0.8852,
+        "score-precision": 0.9072,
+        "score-recall": 0.9011,
+        "score-f1": 0.904,
+        "score-auc": 0.9307
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0225,
+        "score-accuracy": 0.8795,
+        "score-precision": 0.9012,
+        "score-recall": 0.8978,
+        "score-f1": 0.8993,
+        "score-auc": 0.9244
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.015,
+        "score-accuracy": 0.8425,
+        "score-auc": 0.9442
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0071,
+        "score-accuracy": 0.6119,
+        "score-auc": 0.7807
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.007,
+        "score-accuracy": 0.6784,
+        "score-auc": 0.7325
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0155,
+        "score-accuracy": 0.983,
+        "score-precision": 0.9955,
+        "score-recall": 0.9553,
+        "score-f1": 0.9747,
+        "score-auc": 0.9976
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0084,
+        "score-accuracy": 0.9094,
+        "score-precision": 0.8682,
+        "score-recall": 0.8466,
+        "score-f1": 0.8565,
+        "score-auc": 0.9329
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0083,
+        "score-accuracy": 0.8906,
+        "score-precision": 0.831,
+        "score-recall": 0.8155,
+        "score-f1": 0.8227,
+        "score-auc": 0.9028
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0911,
+        "score-accuracy": 0.9342,
+        "score-auc": 0.5461
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0619,
+        "score-accuracy": 0.9343,
+        "score-auc": 0.5432
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0614,
+        "score-accuracy": 0.9342,
+        "score-auc": 0.5422
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.021,
+        "score-accuracy": 0.9832,
+        "score-auc": 0.9992
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0103,
+        "score-accuracy": 0.92,
+        "score-auc": 0.99
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0102,
+        "score-accuracy": 0.9142,
+        "score-auc": 0.9827
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.7038,
+        "score-accuracy": 0.9974,
+        "score-auc": 0.9997
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.6778,
+        "score-accuracy": 0.9871,
+        "score-auc": 0.9982
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.68,
+        "score-accuracy": 0.9843,
+        "score-auc": 0.9969
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0194,
+        "score-accuracy": 0.9778,
+        "score-precision": 0.9987,
+        "score-recall": 0.9252,
+        "score-f1": 0.9599,
+        "score-auc": 0.9954
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0115,
+        "score-accuracy": 0.9131,
+        "score-precision": 0.8966,
+        "score-recall": 0.8122,
+        "score-f1": 0.8515,
+        "score-auc": 0.9333
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0114,
+        "score-accuracy": 0.903,
+        "score-precision": 0.8861,
+        "score-recall": 0.7872,
+        "score-f1": 0.8329,
+        "score-auc": 0.9123
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.4103,
+        "score-accuracy": 0.9994,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.405,
+        "score-accuracy": 0.915,
+        "score-auc": 0.9941
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.3969,
+        "score-accuracy": 0.9002,
+        "score-auc": 0.9869
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0447,
+        "score-accuracy": 0.9367,
+        "score-auc": 0.9832
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0339,
+        "score-accuracy": 0.492,
+        "score-auc": 0.7197
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0343,
+        "score-accuracy": 0.475,
+        "score-auc": 0.6957
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0912,
+        "score-accuracy": 0.9932,
+        "score-auc": 0.9996
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0805,
+        "score-accuracy": 0.9392,
+        "score-auc": 0.98
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0801,
+        "score-accuracy": 0.9287,
+        "score-auc": 0.9672
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0421,
+        "score-accuracy": 0.8722,
+        "score-auc": 0.9857
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0288,
+        "score-accuracy": 0.6366,
+        "score-auc": 0.8916
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0295,
+        "score-accuracy": 0.6303,
+        "score-auc": 0.8843
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0295,
+        "score-accuracy": 0.5356,
+        "score-auc": 0.7629
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0203,
+        "score-accuracy": 0.2555,
+        "score-auc": 0.537
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0202,
+        "score-accuracy": 0.2505,
+        "score-auc": 0.5241
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.068,
+        "score-accuracy": 0.9366,
+        "score-auc": 0.5323
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0374,
+        "score-accuracy": 0.9378,
+        "score-auc": 0.5345
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.035,
+        "score-accuracy": 0.9378,
+        "score-auc": 0.5263
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0504,
+        "score-accuracy": 0.9357,
+        "score-auc": 0.5387
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0292,
+        "score-accuracy": 0.934,
+        "score-auc": 0.5447
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0278,
+        "score-accuracy": 0.9334,
+        "score-auc": 0.5329
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0297,
+        "score-accuracy": 0.9687,
+        "score-precision": 0.9877,
+        "score-recall": 0.9264,
+        "score-f1": 0.9559,
+        "score-auc": 0.9965
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0186,
+        "score-accuracy": 0.8963,
+        "score-precision": 0.8868,
+        "score-recall": 0.8293,
+        "score-f1": 0.8566,
+        "score-auc": 0.9187
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0188,
+        "score-accuracy": 0.8829,
+        "score-precision": 0.8778,
+        "score-recall": 0.8036,
+        "score-f1": 0.8388,
+        "score-auc": 0.9062
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0608,
+        "score-accuracy": 0.9412,
+        "score-auc": 0.9961
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0467,
+        "score-accuracy": 0.9168,
+        "score-auc": 0.9907
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0462,
+        "score-accuracy": 0.9083,
+        "score-auc": 0.9901
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0629,
+        "score-accuracy": 0.8152,
+        "score-auc": 0.9692
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0498,
+        "score-accuracy": 0.5227,
+        "score-auc": 0.774
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0511,
+        "score-accuracy": 0.5304,
+        "score-auc": 0.7765
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.1605,
+        "score-accuracy": 0.5693,
+        "score-auc": 0.7088
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.1367,
+        "score-accuracy": 0.444,
+        "score-auc": 0.5888
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.1345,
+        "score-accuracy": 0.4426,
+        "score-auc": 0.5915
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0159,
+        "score-accuracy": 0.8792,
+        "score-auc": 0.966
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0076,
+        "score-accuracy": 0.5288,
+        "score-auc": 0.7256
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0074,
+        "score-accuracy": 0.4588,
+        "score-auc": 0.5837
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0346,
+        "score-accuracy": 0.9849,
+        "score-auc": 0.9986
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0222,
+        "score-accuracy": 0.9545,
+        "score-auc": 0.9914
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0218,
+        "score-accuracy": 0.9497,
+        "score-auc": 0.9887
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.0205,
+        "score-accuracy": 0.9976,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0116,
+        "score-accuracy": 0.979,
+        "score-auc": 0.9984
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.0116,
+        "score-accuracy": 0.9787,
+        "score-auc": 0.9932
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "train",
+        "score-time_iter": 0.017,
+        "score-accuracy": 0.8621,
+        "score-auc": 0.9427
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "val",
+        "score-time_iter": 0.0072,
+        "score-accuracy": 0.4407,
+        "score-auc": 0.6127
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_Fragmented-k3",
+        "Split": "test",
+        "score-time_iter": 0.007,
+        "score-accuracy": 0.373,
+        "score-auc": 0.5103
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0406,
+        "score-accuracy": 0.9971,
+        "score-auc": 0.9995
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0309,
+        "score-accuracy": 0.9652,
+        "score-auc": 0.9903
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0309,
+        "score-accuracy": 0.9575,
+        "score-auc": 0.9861
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.3018,
+        "score-accuracy": 0.9992,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.2901,
+        "score-accuracy": 0.9819,
+        "score-auc": 0.999
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.299,
+        "score-accuracy": 0.9783,
+        "score-auc": 0.9978
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0223,
+        "score-accuracy": 0.9999,
+        "score-precision": 1.0,
+        "score-recall": 0.9999,
+        "score-f1": 0.9999,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0122,
+        "score-accuracy": 0.9194,
+        "score-precision": 0.9278,
+        "score-recall": 0.9263,
+        "score-f1": 0.9266,
+        "score-auc": 0.9665
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0121,
+        "score-accuracy": 0.8997,
+        "score-precision": 0.911,
+        "score-recall": 0.9043,
+        "score-f1": 0.9074,
+        "score-auc": 0.9513
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0367,
+        "score-accuracy": 0.9971,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0281,
+        "score-accuracy": 0.9649,
+        "score-auc": 0.9992
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.028,
+        "score-accuracy": 0.96,
+        "score-auc": 0.9935
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.043,
+        "score-accuracy": 0.9989,
+        "score-precision": 0.9976,
+        "score-recall": 0.9982,
+        "score-f1": 0.9979,
+        "score-auc": 0.9999
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0299,
+        "score-accuracy": 0.961,
+        "score-precision": 0.9415,
+        "score-recall": 0.9098,
+        "score-f1": 0.9252,
+        "score-auc": 0.9715
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0298,
+        "score-accuracy": 0.9562,
+        "score-precision": 0.932,
+        "score-recall": 0.8977,
+        "score-f1": 0.9144,
+        "score-auc": 0.9643
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0287,
+        "score-accuracy": 0.9519,
+        "score-precision": 0.9776,
+        "score-recall": 0.9134,
+        "score-f1": 0.9439,
+        "score-auc": 0.9944
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0167,
+        "score-accuracy": 0.8832,
+        "score-precision": 0.8591,
+        "score-recall": 0.8841,
+        "score-f1": 0.8695,
+        "score-auc": 0.9388
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0164,
+        "score-accuracy": 0.8622,
+        "score-precision": 0.8387,
+        "score-recall": 0.858,
+        "score-f1": 0.8464,
+        "score-auc": 0.9141
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0194,
+        "score-accuracy": 1.0,
+        "score-precision": 1.0,
+        "score-recall": 1.0,
+        "score-f1": 1.0,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0105,
+        "score-accuracy": 0.9356,
+        "score-precision": 0.8754,
+        "score-recall": 0.8568,
+        "score-f1": 0.8653,
+        "score-auc": 0.9705
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0102,
+        "score-accuracy": 0.9278,
+        "score-precision": 0.8664,
+        "score-recall": 0.8373,
+        "score-f1": 0.85,
+        "score-auc": 0.9592
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0455,
+        "score-accuracy": 0.985,
+        "score-auc": 0.9978
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0366,
+        "score-accuracy": 0.3338,
+        "score-auc": 0.6764
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0364,
+        "score-accuracy": 0.3235,
+        "score-auc": 0.6682
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0316,
+        "score-accuracy": 0.996,
+        "score-auc": 0.9998
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0222,
+        "score-accuracy": 0.9686,
+        "score-auc": 0.9953
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.022,
+        "score-accuracy": 0.9638,
+        "score-auc": 0.992
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0231,
+        "score-accuracy": 0.4482,
+        "score-auc": 0.7657
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0155,
+        "score-accuracy": 0.3355,
+        "score-auc": 0.6388
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0157,
+        "score-accuracy": 0.3096,
+        "score-auc": 0.6178
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0234,
+        "score-accuracy": 0.9957,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0133,
+        "score-accuracy": 0.4152,
+        "score-auc": 0.7767
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0132,
+        "score-accuracy": 0.4123,
+        "score-auc": 0.7724
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0271,
+        "score-accuracy": 0.9997,
+        "score-precision": 0.9997,
+        "score-recall": 0.9998,
+        "score-f1": 0.9997,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0173,
+        "score-accuracy": 0.9115,
+        "score-precision": 0.9255,
+        "score-recall": 0.9273,
+        "score-f1": 0.926,
+        "score-auc": 0.9576
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0174,
+        "score-accuracy": 0.9007,
+        "score-precision": 0.9134,
+        "score-recall": 0.9227,
+        "score-f1": 0.9176,
+        "score-auc": 0.9438
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0146,
+        "score-accuracy": 0.9885,
+        "score-auc": 0.9981
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0067,
+        "score-accuracy": 0.5881,
+        "score-auc": 0.8023
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0068,
+        "score-accuracy": 0.5892,
+        "score-auc": 0.7395
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0174,
+        "score-accuracy": 0.9774,
+        "score-precision": 0.9956,
+        "score-recall": 0.9381,
+        "score-f1": 0.9557,
+        "score-auc": 0.9809
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0084,
+        "score-accuracy": 0.9058,
+        "score-precision": 0.8734,
+        "score-recall": 0.8219,
+        "score-f1": 0.8366,
+        "score-auc": 0.9559
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0085,
+        "score-accuracy": 0.8932,
+        "score-precision": 0.8527,
+        "score-recall": 0.7975,
+        "score-f1": 0.8151,
+        "score-auc": 0.9288
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0794,
+        "score-accuracy": 0.9341,
+        "score-auc": 0.5298
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0542,
+        "score-accuracy": 0.9342,
+        "score-auc": 0.5334
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0542,
+        "score-accuracy": 0.9341,
+        "score-auc": 0.5245
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0157,
+        "score-accuracy": 0.9887,
+        "score-auc": 0.9999
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0083,
+        "score-accuracy": 0.9344,
+        "score-auc": 0.9911
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0081,
+        "score-accuracy": 0.9261,
+        "score-auc": 0.976
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.7026,
+        "score-accuracy": 0.9975,
+        "score-auc": 0.9998
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.6695,
+        "score-accuracy": 0.9832,
+        "score-auc": 0.9988
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.6698,
+        "score-accuracy": 0.9817,
+        "score-auc": 0.9981
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0173,
+        "score-accuracy": 0.9998,
+        "score-precision": 0.9998,
+        "score-recall": 0.9994,
+        "score-f1": 0.9996,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.01,
+        "score-accuracy": 0.9389,
+        "score-precision": 0.9289,
+        "score-recall": 0.8696,
+        "score-f1": 0.8973,
+        "score-auc": 0.9723
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.01,
+        "score-accuracy": 0.915,
+        "score-precision": 0.9051,
+        "score-recall": 0.8116,
+        "score-f1": 0.8549,
+        "score-auc": 0.9481
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.4409,
+        "score-accuracy": 0.997,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.4082,
+        "score-accuracy": 0.9118,
+        "score-auc": 0.9946
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.4096,
+        "score-accuracy": 0.8955,
+        "score-auc": 0.9866
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0408,
+        "score-accuracy": 0.9983,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.031,
+        "score-accuracy": 0.5324,
+        "score-auc": 0.7471
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0312,
+        "score-accuracy": 0.5342,
+        "score-auc": 0.7221
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0882,
+        "score-accuracy": 0.9992,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0784,
+        "score-accuracy": 0.9464,
+        "score-auc": 0.9808
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0771,
+        "score-accuracy": 0.9411,
+        "score-auc": 0.9749
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0349,
+        "score-accuracy": 0.9289,
+        "score-auc": 0.9928
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.024,
+        "score-accuracy": 0.6082,
+        "score-auc": 0.8729
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0242,
+        "score-accuracy": 0.5989,
+        "score-auc": 0.8657
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0248,
+        "score-accuracy": 0.9122,
+        "score-auc": 0.9881
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0177,
+        "score-accuracy": 0.2892,
+        "score-auc": 0.5872
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0176,
+        "score-accuracy": 0.2822,
+        "score-auc": 0.5811
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0586,
+        "score-accuracy": 0.9366,
+        "score-auc": 0.5246
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0381,
+        "score-accuracy": 0.9377,
+        "score-auc": 0.5283
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0356,
+        "score-accuracy": 0.9377,
+        "score-auc": 0.5208
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0475,
+        "score-accuracy": 0.9355,
+        "score-auc": 0.5115
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0295,
+        "score-accuracy": 0.9338,
+        "score-auc": 0.524
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0279,
+        "score-accuracy": 0.9333,
+        "score-auc": 0.5105
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0241,
+        "score-accuracy": 0.9992,
+        "score-precision": 0.9998,
+        "score-recall": 0.998,
+        "score-f1": 0.9989,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0149,
+        "score-accuracy": 0.916,
+        "score-precision": 0.8957,
+        "score-recall": 0.8786,
+        "score-f1": 0.8864,
+        "score-auc": 0.961
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0149,
+        "score-accuracy": 0.9021,
+        "score-precision": 0.8819,
+        "score-recall": 0.8598,
+        "score-f1": 0.8699,
+        "score-auc": 0.9493
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0486,
+        "score-accuracy": 0.9914,
+        "score-auc": 0.9997
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0382,
+        "score-accuracy": 0.95,
+        "score-auc": 0.9925
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.038,
+        "score-accuracy": 0.9423,
+        "score-auc": 0.9894
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.045,
+        "score-accuracy": 0.3762,
+        "score-auc": 0.7055
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0373,
+        "score-accuracy": 0.2937,
+        "score-auc": 0.609
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0371,
+        "score-accuracy": 0.2804,
+        "score-auc": 0.6044
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.1659,
+        "score-accuracy": 0.6778,
+        "score-auc": 0.8127
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.1424,
+        "score-accuracy": 0.3934,
+        "score-auc": 0.5547
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.1444,
+        "score-accuracy": 0.3916,
+        "score-auc": 0.555
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0133,
+        "score-accuracy": 0.9883,
+        "score-auc": 0.9988
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0066,
+        "score-accuracy": 0.645,
+        "score-auc": 0.8444
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0066,
+        "score-accuracy": 0.6078,
+        "score-auc": 0.7784
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0321,
+        "score-accuracy": 0.9873,
+        "score-auc": 0.9993
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0207,
+        "score-accuracy": 0.9442,
+        "score-auc": 0.9894
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0205,
+        "score-accuracy": 0.9357,
+        "score-auc": 0.9853
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.0205,
+        "score-accuracy": 0.9929,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.011,
+        "score-accuracy": 0.97,
+        "score-auc": 0.998
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0107,
+        "score-accuracy": 0.9652,
+        "score-auc": 0.9891
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "train",
+        "score-time_iter": 0.015,
+        "score-accuracy": 0.9885,
+        "score-auc": 0.9973
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "val",
+        "score-time_iter": 0.0069,
+        "score-accuracy": 0.5695,
+        "score-auc": 0.7847
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_Fragmented-k1",
+        "Split": "test",
+        "score-time_iter": 0.0069,
+        "score-accuracy": 0.5162,
+        "score-auc": 0.6981
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0167,
+        "score-accuracy": 0.7842,
+        "score-auc": 0.9187
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0063,
+        "score-accuracy": 0.7145,
+        "score-auc": 0.8607
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0061,
+        "score-accuracy": 0.7121,
+        "score-auc": 0.8593
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0196,
+        "score-accuracy": 0.9674,
+        "score-auc": 0.9989
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0079,
+        "score-accuracy": 0.8782,
+        "score-auc": 0.9827
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0077,
+        "score-accuracy": 0.8738,
+        "score-auc": 0.9819
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0141,
+        "score-accuracy": 0.858,
+        "score-precision": 0.878,
+        "score-recall": 0.8596,
+        "score-f1": 0.8686,
+        "score-auc": 0.9467
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0051,
+        "score-accuracy": 0.8036,
+        "score-precision": 0.8274,
+        "score-recall": 0.8132,
+        "score-f1": 0.8201,
+        "score-auc": 0.8765
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.005,
+        "score-accuracy": 0.7836,
+        "score-precision": 0.8065,
+        "score-recall": 0.7927,
+        "score-f1": 0.7993,
+        "score-auc": 0.8579
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0106,
+        "score-accuracy": 0.9695,
+        "score-auc": 0.9992
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0038,
+        "score-accuracy": 0.9432,
+        "score-auc": 0.9945
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0037,
+        "score-accuracy": 0.943,
+        "score-auc": 0.9898
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0432,
+        "score-accuracy": 0.8547,
+        "score-precision": 0.7977,
+        "score-recall": 0.5853,
+        "score-f1": 0.6751,
+        "score-auc": 0.8921
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.021,
+        "score-accuracy": 0.8493,
+        "score-precision": 0.7803,
+        "score-recall": 0.6033,
+        "score-f1": 0.6798,
+        "score-auc": 0.8866
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0208,
+        "score-accuracy": 0.846,
+        "score-precision": 0.7687,
+        "score-recall": 0.5862,
+        "score-f1": 0.6645,
+        "score-auc": 0.884
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0224,
+        "score-accuracy": 0.8073,
+        "score-precision": 0.8261,
+        "score-recall": 0.7135,
+        "score-f1": 0.7649,
+        "score-auc": 0.8958
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0091,
+        "score-accuracy": 0.7656,
+        "score-precision": 0.7712,
+        "score-recall": 0.6634,
+        "score-f1": 0.7122,
+        "score-auc": 0.8357
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0089,
+        "score-accuracy": 0.7548,
+        "score-precision": 0.7568,
+        "score-recall": 0.6565,
+        "score-f1": 0.7026,
+        "score-auc": 0.8216
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0123,
+        "score-accuracy": 0.9259,
+        "score-precision": 0.9547,
+        "score-recall": 0.7297,
+        "score-f1": 0.8247,
+        "score-auc": 0.963
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0046,
+        "score-accuracy": 0.8626,
+        "score-precision": 0.7733,
+        "score-recall": 0.6027,
+        "score-f1": 0.6749,
+        "score-auc": 0.8669
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0046,
+        "score-accuracy": 0.8727,
+        "score-precision": 0.809,
+        "score-recall": 0.6262,
+        "score-f1": 0.7038,
+        "score-auc": 0.8731
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0102,
+        "score-accuracy": 0.85,
+        "score-auc": 0.9802
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0037,
+        "score-accuracy": 0.2742,
+        "score-auc": 0.6071
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0036,
+        "score-accuracy": 0.2424,
+        "score-auc": 0.5904
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.018,
+        "score-accuracy": 0.8261,
+        "score-auc": 0.9595
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0082,
+        "score-accuracy": 0.6226,
+        "score-auc": 0.8667
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0081,
+        "score-accuracy": 0.6285,
+        "score-auc": 0.8644
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0105,
+        "score-accuracy": 0.4534,
+        "score-auc": 0.7565
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0042,
+        "score-accuracy": 0.2993,
+        "score-auc": 0.5885
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0039,
+        "score-accuracy": 0.2572,
+        "score-auc": 0.5515
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.014,
+        "score-accuracy": 0.9336,
+        "score-auc": 0.994
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0046,
+        "score-accuracy": 0.3484,
+        "score-auc": 0.711
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0085,
+        "score-accuracy": 0.3524,
+        "score-auc": 0.719
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0244,
+        "score-accuracy": 0.8301,
+        "score-precision": 0.8531,
+        "score-recall": 0.8758,
+        "score-f1": 0.8636,
+        "score-auc": 0.9026
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0212,
+        "score-accuracy": 0.7624,
+        "score-precision": 0.7495,
+        "score-recall": 0.7556,
+        "score-f1": 0.7524,
+        "score-auc": 0.8511
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0115,
+        "score-accuracy": 0.7624,
+        "score-precision": 0.7517,
+        "score-recall": 0.7545,
+        "score-f1": 0.7529,
+        "score-auc": 0.8485
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0122,
+        "score-accuracy": 0.7,
+        "score-auc": 0.8833
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0045,
+        "score-accuracy": 0.5508,
+        "score-auc": 0.7033
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0044,
+        "score-accuracy": 0.5756,
+        "score-auc": 0.6371
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0144,
+        "score-accuracy": 0.9928,
+        "score-precision": 0.9932,
+        "score-recall": 0.9858,
+        "score-f1": 0.9894,
+        "score-auc": 0.9998
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0057,
+        "score-accuracy": 0.9105,
+        "score-precision": 0.8476,
+        "score-recall": 0.8789,
+        "score-f1": 0.8622,
+        "score-auc": 0.9251
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0056,
+        "score-accuracy": 0.8906,
+        "score-precision": 0.8083,
+        "score-recall": 0.8553,
+        "score-f1": 0.8304,
+        "score-auc": 0.9012
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0922,
+        "score-accuracy": 0.9347,
+        "score-auc": 0.6013
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0554,
+        "score-accuracy": 0.9348,
+        "score-auc": 0.5893
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0522,
+        "score-accuracy": 0.9347,
+        "score-auc": 0.581
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.015,
+        "score-accuracy": 0.7187,
+        "score-auc": 0.9393
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0057,
+        "score-accuracy": 0.2597,
+        "score-auc": 0.736
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0056,
+        "score-accuracy": 0.2574,
+        "score-auc": 0.7262
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0374,
+        "score-accuracy": 0.8272,
+        "score-auc": 0.9567
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0181,
+        "score-accuracy": 0.7303,
+        "score-auc": 0.916
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.018,
+        "score-accuracy": 0.7278,
+        "score-auc": 0.9167
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.013,
+        "score-accuracy": 0.9031,
+        "score-precision": 0.9075,
+        "score-recall": 0.7128,
+        "score-f1": 0.7839,
+        "score-auc": 0.9354
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0054,
+        "score-accuracy": 0.8518,
+        "score-precision": 0.7577,
+        "score-recall": 0.6414,
+        "score-f1": 0.6922,
+        "score-auc": 0.8685
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0053,
+        "score-accuracy": 0.849,
+        "score-precision": 0.7571,
+        "score-recall": 0.6266,
+        "score-f1": 0.684,
+        "score-auc": 0.8598
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0194,
+        "score-accuracy": 0.8911,
+        "score-auc": 0.9964
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0075,
+        "score-accuracy": 0.8376,
+        "score-auc": 0.9822
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0074,
+        "score-accuracy": 0.8231,
+        "score-auc": 0.9775
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0161,
+        "score-accuracy": 0.9267,
+        "score-auc": 0.9542
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0061,
+        "score-accuracy": 0.468,
+        "score-auc": 0.6536
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0059,
+        "score-accuracy": 0.4672,
+        "score-auc": 0.6269
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0173,
+        "score-accuracy": 0.7838,
+        "score-auc": 0.9299
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0059,
+        "score-accuracy": 0.7719,
+        "score-auc": 0.9122
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0059,
+        "score-accuracy": 0.7648,
+        "score-auc": 0.9035
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.022,
+        "score-accuracy": 0.793,
+        "score-auc": 0.9622
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0102,
+        "score-accuracy": 0.5589,
+        "score-auc": 0.8348
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0101,
+        "score-accuracy": 0.5518,
+        "score-auc": 0.8262
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.015,
+        "score-accuracy": 0.6073,
+        "score-auc": 0.8696
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0051,
+        "score-accuracy": 0.235,
+        "score-auc": 0.5139
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0048,
+        "score-accuracy": 0.2299,
+        "score-auc": 0.5026
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0568,
+        "score-accuracy": 0.9374,
+        "score-auc": 0.5823
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0315,
+        "score-accuracy": 0.9386,
+        "score-auc": 0.5786
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0303,
+        "score-accuracy": 0.9386,
+        "score-auc": 0.5678
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0497,
+        "score-accuracy": 0.9361,
+        "score-auc": 0.5705
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0291,
+        "score-accuracy": 0.9344,
+        "score-auc": 0.5766
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0258,
+        "score-accuracy": 0.9339,
+        "score-auc": 0.5742
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0176,
+        "score-accuracy": 0.953,
+        "score-precision": 0.9709,
+        "score-recall": 0.8961,
+        "score-f1": 0.93,
+        "score-auc": 0.9845
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0083,
+        "score-accuracy": 0.8835,
+        "score-precision": 0.8704,
+        "score-recall": 0.8066,
+        "score-f1": 0.8357,
+        "score-auc": 0.9062
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0079,
+        "score-accuracy": 0.8628,
+        "score-precision": 0.85,
+        "score-recall": 0.7744,
+        "score-f1": 0.809,
+        "score-auc": 0.8926
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.028,
+        "score-accuracy": 0.8633,
+        "score-auc": 0.9764
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0137,
+        "score-accuracy": 0.6951,
+        "score-auc": 0.9045
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0136,
+        "score-accuracy": 0.6873,
+        "score-auc": 0.9023
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0155,
+        "score-accuracy": 0.4366,
+        "score-auc": 0.7404
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.007,
+        "score-accuracy": 0.3083,
+        "score-auc": 0.6148
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.007,
+        "score-accuracy": 0.2852,
+        "score-auc": 0.5923
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0677,
+        "score-accuracy": 0.5389,
+        "score-auc": 0.737
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0335,
+        "score-accuracy": 0.4598,
+        "score-auc": 0.6186
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0335,
+        "score-accuracy": 0.4598,
+        "score-auc": 0.619
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.011,
+        "score-accuracy": 0.5583,
+        "score-auc": 0.7925
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.004,
+        "score-accuracy": 0.2763,
+        "score-auc": 0.6194
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0038,
+        "score-accuracy": 0.2392,
+        "score-auc": 0.4856
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0255,
+        "score-accuracy": 0.7254,
+        "score-auc": 0.9006
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0116,
+        "score-accuracy": 0.662,
+        "score-auc": 0.8679
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0114,
+        "score-accuracy": 0.6585,
+        "score-auc": 0.8691
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.0105,
+        "score-accuracy": 0.7981,
+        "score-auc": 0.9708
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0037,
+        "score-accuracy": 0.8459,
+        "score-auc": 0.9853
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0037,
+        "score-accuracy": 0.8442,
+        "score-auc": 0.9593
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "train",
+        "score-time_iter": 0.013,
+        "score-accuracy": 0.7207,
+        "score-auc": 0.8968
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "val",
+        "score-time_iter": 0.0049,
+        "score-accuracy": 0.4475,
+        "score-auc": 0.6037
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_NoFeatures",
+        "Split": "test",
+        "score-time_iter": 0.0046,
+        "score-accuracy": 0.3405,
+        "score-auc": 0.5116
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0198,
+        "score-accuracy": 0.9356,
+        "score-auc": 0.9944
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0092,
+        "score-accuracy": 0.9131,
+        "score-auc": 0.9806
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0091,
+        "score-accuracy": 0.9062,
+        "score-auc": 0.9782
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0234,
+        "score-accuracy": 0.9898,
+        "score-auc": 0.9998
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0114,
+        "score-accuracy": 0.9563,
+        "score-auc": 0.9965
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0111,
+        "score-accuracy": 0.9509,
+        "score-auc": 0.9935
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0166,
+        "score-accuracy": 0.9581,
+        "score-precision": 0.9663,
+        "score-recall": 0.9566,
+        "score-f1": 0.9614,
+        "score-auc": 0.9954
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0073,
+        "score-accuracy": 0.8861,
+        "score-precision": 0.8936,
+        "score-recall": 0.9002,
+        "score-f1": 0.8968,
+        "score-auc": 0.9296
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0072,
+        "score-accuracy": 0.8666,
+        "score-precision": 0.8802,
+        "score-recall": 0.8741,
+        "score-f1": 0.877,
+        "score-auc": 0.9178
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0104,
+        "score-accuracy": 0.9714,
+        "score-auc": 0.9994
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0039,
+        "score-accuracy": 0.9522,
+        "score-auc": 0.9975
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0038,
+        "score-accuracy": 0.9553,
+        "score-auc": 0.9891
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0701,
+        "score-accuracy": 0.8705,
+        "score-precision": 0.809,
+        "score-recall": 0.6522,
+        "score-f1": 0.7221,
+        "score-auc": 0.919
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0498,
+        "score-accuracy": 0.8661,
+        "score-precision": 0.8013,
+        "score-recall": 0.659,
+        "score-f1": 0.723,
+        "score-auc": 0.9121
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0496,
+        "score-accuracy": 0.8679,
+        "score-precision": 0.7947,
+        "score-recall": 0.6653,
+        "score-f1": 0.7241,
+        "score-auc": 0.9138
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0266,
+        "score-accuracy": 0.8908,
+        "score-precision": 0.9069,
+        "score-recall": 0.8391,
+        "score-f1": 0.8716,
+        "score-auc": 0.9653
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0136,
+        "score-accuracy": 0.8298,
+        "score-precision": 0.8288,
+        "score-recall": 0.7734,
+        "score-f1": 0.7998,
+        "score-auc": 0.8945
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0136,
+        "score-accuracy": 0.8166,
+        "score-precision": 0.818,
+        "score-recall": 0.7536,
+        "score-f1": 0.7843,
+        "score-auc": 0.8786
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0169,
+        "score-accuracy": 0.9743,
+        "score-precision": 0.9896,
+        "score-recall": 0.9042,
+        "score-f1": 0.9449,
+        "score-auc": 0.9973
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0073,
+        "score-accuracy": 0.9046,
+        "score-precision": 0.8483,
+        "score-recall": 0.7369,
+        "score-f1": 0.7877,
+        "score-auc": 0.9046
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0071,
+        "score-accuracy": 0.902,
+        "score-precision": 0.8396,
+        "score-recall": 0.7442,
+        "score-f1": 0.788,
+        "score-auc": 0.9113
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0238,
+        "score-accuracy": 0.75,
+        "score-auc": 0.9426
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0049,
+        "score-accuracy": 0.2886,
+        "score-auc": 0.6307
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0048,
+        "score-accuracy": 0.2677,
+        "score-auc": 0.6079
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.022,
+        "score-accuracy": 0.9785,
+        "score-auc": 0.9996
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0115,
+        "score-accuracy": 0.9616,
+        "score-auc": 0.9976
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0113,
+        "score-accuracy": 0.9516,
+        "score-auc": 0.9941
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0141,
+        "score-accuracy": 0.4231,
+        "score-auc": 0.7339
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0052,
+        "score-accuracy": 0.2916,
+        "score-auc": 0.599
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.005,
+        "score-accuracy": 0.2594,
+        "score-auc": 0.5611
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0131,
+        "score-accuracy": 0.9736,
+        "score-auc": 0.9992
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.005,
+        "score-accuracy": 0.4214,
+        "score-auc": 0.7654
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0048,
+        "score-accuracy": 0.3997,
+        "score-auc": 0.754
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0282,
+        "score-accuracy": 0.9558,
+        "score-precision": 0.9712,
+        "score-recall": 0.9553,
+        "score-f1": 0.9632,
+        "score-auc": 0.994
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0165,
+        "score-accuracy": 0.8896,
+        "score-precision": 0.9131,
+        "score-recall": 0.901,
+        "score-f1": 0.907,
+        "score-auc": 0.9314
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0159,
+        "score-accuracy": 0.8839,
+        "score-precision": 0.9063,
+        "score-recall": 0.8994,
+        "score-f1": 0.9028,
+        "score-auc": 0.9266
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0125,
+        "score-accuracy": 0.8448,
+        "score-auc": 0.9658
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0046,
+        "score-accuracy": 0.5627,
+        "score-auc": 0.7345
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0045,
+        "score-accuracy": 0.5513,
+        "score-auc": 0.6566
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0114,
+        "score-accuracy": 0.9916,
+        "score-precision": 0.9965,
+        "score-recall": 0.9792,
+        "score-f1": 0.9878,
+        "score-auc": 0.9997
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0127,
+        "score-accuracy": 0.9147,
+        "score-precision": 0.867,
+        "score-recall": 0.8647,
+        "score-f1": 0.8652,
+        "score-auc": 0.9423
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0047,
+        "score-accuracy": 0.9047,
+        "score-precision": 0.8563,
+        "score-recall": 0.8359,
+        "score-f1": 0.8456,
+        "score-auc": 0.9135
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.1131,
+        "score-accuracy": 0.9362,
+        "score-auc": 0.6694
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0737,
+        "score-accuracy": 0.9359,
+        "score-auc": 0.6461
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0738,
+        "score-accuracy": 0.9358,
+        "score-auc": 0.6362
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0156,
+        "score-accuracy": 0.953,
+        "score-auc": 0.9984
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.007,
+        "score-accuracy": 0.909,
+        "score-auc": 0.9921
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0066,
+        "score-accuracy": 0.9073,
+        "score-auc": 0.9816
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0474,
+        "score-accuracy": 0.9765,
+        "score-auc": 0.9988
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0278,
+        "score-accuracy": 0.9645,
+        "score-auc": 0.9971
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0277,
+        "score-accuracy": 0.9625,
+        "score-auc": 0.9965
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0174,
+        "score-accuracy": 0.9933,
+        "score-precision": 0.9988,
+        "score-recall": 0.9781,
+        "score-f1": 0.9883,
+        "score-auc": 0.9997
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0081,
+        "score-accuracy": 0.9206,
+        "score-precision": 0.8798,
+        "score-recall": 0.8601,
+        "score-f1": 0.8693,
+        "score-auc": 0.929
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0077,
+        "score-accuracy": 0.9138,
+        "score-precision": 0.8853,
+        "score-recall": 0.8278,
+        "score-f1": 0.8551,
+        "score-auc": 0.9176
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0229,
+        "score-accuracy": 0.9377,
+        "score-auc": 0.9991
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0111,
+        "score-accuracy": 0.8938,
+        "score-auc": 0.9933
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0111,
+        "score-accuracy": 0.8804,
+        "score-auc": 0.9879
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0191,
+        "score-accuracy": 0.9467,
+        "score-auc": 0.9886
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.009,
+        "score-accuracy": 0.5862,
+        "score-auc": 0.7657
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0088,
+        "score-accuracy": 0.5383,
+        "score-auc": 0.7161
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0203,
+        "score-accuracy": 0.9494,
+        "score-auc": 0.9946
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0099,
+        "score-accuracy": 0.9279,
+        "score-auc": 0.9776
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0096,
+        "score-accuracy": 0.9209,
+        "score-auc": 0.9723
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0263,
+        "score-accuracy": 0.7934,
+        "score-auc": 0.9629
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0146,
+        "score-accuracy": 0.6076,
+        "score-auc": 0.8741
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0146,
+        "score-accuracy": 0.5984,
+        "score-auc": 0.8662
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0123,
+        "score-accuracy": 0.5943,
+        "score-auc": 0.8488
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.005,
+        "score-accuracy": 0.2318,
+        "score-auc": 0.5171
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0047,
+        "score-accuracy": 0.2186,
+        "score-auc": 0.4991
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0679,
+        "score-accuracy": 0.94,
+        "score-auc": 0.6771
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.04,
+        "score-accuracy": 0.9402,
+        "score-auc": 0.6493
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.039,
+        "score-accuracy": 0.94,
+        "score-auc": 0.6426
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0519,
+        "score-accuracy": 0.9432,
+        "score-auc": 0.7203
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0307,
+        "score-accuracy": 0.9395,
+        "score-auc": 0.6851
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0299,
+        "score-accuracy": 0.9387,
+        "score-auc": 0.6767
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0202,
+        "score-accuracy": 0.971,
+        "score-precision": 0.9849,
+        "score-recall": 0.9355,
+        "score-f1": 0.9595,
+        "score-auc": 0.997
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0108,
+        "score-accuracy": 0.8887,
+        "score-precision": 0.8694,
+        "score-recall": 0.8271,
+        "score-f1": 0.8474,
+        "score-auc": 0.9134
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0106,
+        "score-accuracy": 0.8794,
+        "score-precision": 0.8655,
+        "score-recall": 0.8087,
+        "score-f1": 0.8359,
+        "score-auc": 0.8989
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0386,
+        "score-accuracy": 0.9697,
+        "score-auc": 0.999
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0234,
+        "score-accuracy": 0.9512,
+        "score-auc": 0.9957
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.023,
+        "score-accuracy": 0.9432,
+        "score-auc": 0.9945
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0169,
+        "score-accuracy": 0.4328,
+        "score-auc": 0.7371
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0083,
+        "score-accuracy": 0.2942,
+        "score-auc": 0.6196
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0081,
+        "score-accuracy": 0.2767,
+        "score-auc": 0.5989
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.1342,
+        "score-accuracy": 0.5543,
+        "score-auc": 0.7384
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.1001,
+        "score-accuracy": 0.5341,
+        "score-auc": 0.6996
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.1003,
+        "score-accuracy": 0.5337,
+        "score-auc": 0.6995
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.012,
+        "score-accuracy": 0.8533,
+        "score-auc": 0.981
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0044,
+        "score-accuracy": 0.495,
+        "score-auc": 0.6702
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0044,
+        "score-accuracy": 0.4392,
+        "score-auc": 0.6563
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0349,
+        "score-accuracy": 0.9607,
+        "score-auc": 0.9962
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0207,
+        "score-accuracy": 0.9519,
+        "score-auc": 0.9944
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0205,
+        "score-accuracy": 0.9522,
+        "score-auc": 0.9941
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0144,
+        "score-accuracy": 0.7976,
+        "score-auc": 0.9703
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0051,
+        "score-accuracy": 0.8511,
+        "score-auc": 0.9892
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0047,
+        "score-accuracy": 0.851,
+        "score-auc": 0.9569
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "train",
+        "score-time_iter": 0.0105,
+        "score-accuracy": 0.6345,
+        "score-auc": 0.8446
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "val",
+        "score-time_iter": 0.0039,
+        "score-accuracy": 0.3339,
+        "score-auc": 0.5682
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_NodeDegree",
+        "Split": "test",
+        "score-time_iter": 0.0036,
+        "score-accuracy": 0.2919,
+        "score-auc": 0.4912
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.044,
+        "score-accuracy": 0.994,
+        "score-auc": 0.9995
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0322,
+        "score-accuracy": 0.9648,
+        "score-auc": 0.9914
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0309,
+        "score-accuracy": 0.9591,
+        "score-auc": 0.9886
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.3036,
+        "score-accuracy": 0.996,
+        "score-auc": 0.9999
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.2961,
+        "score-accuracy": 0.975,
+        "score-auc": 0.9989
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.2893,
+        "score-accuracy": 0.9703,
+        "score-auc": 0.9979
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0165,
+        "score-accuracy": 0.9659,
+        "score-precision": 0.9718,
+        "score-recall": 0.9657,
+        "score-f1": 0.9688,
+        "score-auc": 0.9958
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.007,
+        "score-accuracy": 0.8889,
+        "score-precision": 0.8982,
+        "score-recall": 0.9007,
+        "score-f1": 0.8993,
+        "score-auc": 0.9345
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0071,
+        "score-accuracy": 0.8738,
+        "score-precision": 0.8868,
+        "score-recall": 0.8803,
+        "score-f1": 0.8834,
+        "score-auc": 0.9221
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0355,
+        "score-accuracy": 0.9983,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0267,
+        "score-accuracy": 0.9672,
+        "score-auc": 0.9987
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0268,
+        "score-accuracy": 0.958,
+        "score-auc": 0.9897
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0508,
+        "score-accuracy": 0.8785,
+        "score-precision": 0.8216,
+        "score-recall": 0.6756,
+        "score-f1": 0.7414,
+        "score-auc": 0.9287
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.029,
+        "score-accuracy": 0.8717,
+        "score-precision": 0.8107,
+        "score-recall": 0.6733,
+        "score-f1": 0.7356,
+        "score-auc": 0.9201
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0291,
+        "score-accuracy": 0.8723,
+        "score-precision": 0.8041,
+        "score-recall": 0.6738,
+        "score-f1": 0.7329,
+        "score-auc": 0.9205
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0297,
+        "score-accuracy": 0.9936,
+        "score-precision": 0.9918,
+        "score-recall": 0.9938,
+        "score-f1": 0.9928,
+        "score-auc": 0.9998
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0156,
+        "score-accuracy": 0.921,
+        "score-precision": 0.9094,
+        "score-recall": 0.9116,
+        "score-f1": 0.9104,
+        "score-auc": 0.9437
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0155,
+        "score-accuracy": 0.9022,
+        "score-precision": 0.8903,
+        "score-recall": 0.8891,
+        "score-f1": 0.8896,
+        "score-auc": 0.9238
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0144,
+        "score-accuracy": 0.9752,
+        "score-precision": 0.9892,
+        "score-recall": 0.9083,
+        "score-f1": 0.9469,
+        "score-auc": 0.9972
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0069,
+        "score-accuracy": 0.9075,
+        "score-precision": 0.8501,
+        "score-recall": 0.7496,
+        "score-f1": 0.7958,
+        "score-auc": 0.9077
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0068,
+        "score-accuracy": 0.9091,
+        "score-precision": 0.8587,
+        "score-recall": 0.7538,
+        "score-f1": 0.8019,
+        "score-auc": 0.9101
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.039,
+        "score-accuracy": 0.9325,
+        "score-auc": 0.9879
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0323,
+        "score-accuracy": 0.3666,
+        "score-auc": 0.7268
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0321,
+        "score-accuracy": 0.3664,
+        "score-auc": 0.7194
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0271,
+        "score-accuracy": 0.9768,
+        "score-auc": 0.9995
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0174,
+        "score-accuracy": 0.9669,
+        "score-auc": 0.9987
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0172,
+        "score-accuracy": 0.9607,
+        "score-auc": 0.9953
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0232,
+        "score-accuracy": 0.4176,
+        "score-auc": 0.7286
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.015,
+        "score-accuracy": 0.273,
+        "score-auc": 0.5978
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0149,
+        "score-accuracy": 0.248,
+        "score-auc": 0.5575
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0209,
+        "score-accuracy": 1.0,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0123,
+        "score-accuracy": 0.6492,
+        "score-auc": 0.9015
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.012,
+        "score-accuracy": 0.6674,
+        "score-auc": 0.9084
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0288,
+        "score-accuracy": 0.956,
+        "score-precision": 0.9707,
+        "score-recall": 0.9561,
+        "score-f1": 0.9633,
+        "score-auc": 0.9939
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0156,
+        "score-accuracy": 0.89,
+        "score-precision": 0.9116,
+        "score-recall": 0.9039,
+        "score-f1": 0.9076,
+        "score-auc": 0.9344
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0155,
+        "score-accuracy": 0.8822,
+        "score-precision": 0.9046,
+        "score-recall": 0.8984,
+        "score-f1": 0.9014,
+        "score-auc": 0.9286
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0109,
+        "score-accuracy": 0.9322,
+        "score-auc": 0.9909
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0045,
+        "score-accuracy": 0.5102,
+        "score-auc": 0.727
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0043,
+        "score-accuracy": 0.5919,
+        "score-auc": 0.6816
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0126,
+        "score-accuracy": 0.9912,
+        "score-precision": 0.995,
+        "score-recall": 0.9794,
+        "score-f1": 0.9871,
+        "score-auc": 0.9997
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0054,
+        "score-accuracy": 0.9136,
+        "score-precision": 0.865,
+        "score-recall": 0.8654,
+        "score-f1": 0.8648,
+        "score-auc": 0.944
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0053,
+        "score-accuracy": 0.8932,
+        "score-precision": 0.8233,
+        "score-recall": 0.8393,
+        "score-f1": 0.8307,
+        "score-auc": 0.9108
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0946,
+        "score-accuracy": 0.9348,
+        "score-auc": 0.6153
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0553,
+        "score-accuracy": 0.935,
+        "score-auc": 0.6021
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0598,
+        "score-accuracy": 0.9349,
+        "score-auc": 0.5928
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0176,
+        "score-accuracy": 0.9844,
+        "score-auc": 0.9995
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0077,
+        "score-accuracy": 0.9461,
+        "score-auc": 0.9948
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0072,
+        "score-accuracy": 0.9418,
+        "score-auc": 0.9868
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.6949,
+        "score-accuracy": 0.9954,
+        "score-auc": 0.9998
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.6756,
+        "score-accuracy": 0.9857,
+        "score-auc": 0.9993
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.6796,
+        "score-accuracy": 0.9834,
+        "score-auc": 0.9985
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0151,
+        "score-accuracy": 0.9908,
+        "score-precision": 0.9984,
+        "score-recall": 0.9699,
+        "score-f1": 0.9839,
+        "score-auc": 0.9994
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0074,
+        "score-accuracy": 0.9172,
+        "score-precision": 0.8842,
+        "score-recall": 0.8414,
+        "score-f1": 0.8617,
+        "score-auc": 0.9272
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0071,
+        "score-accuracy": 0.914,
+        "score-precision": 0.8851,
+        "score-recall": 0.8282,
+        "score-f1": 0.8552,
+        "score-auc": 0.9175
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.4159,
+        "score-accuracy": 0.9957,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.408,
+        "score-accuracy": 0.9255,
+        "score-auc": 0.9964
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.4092,
+        "score-accuracy": 0.9132,
+        "score-auc": 0.992
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0422,
+        "score-accuracy": 0.9817,
+        "score-auc": 0.9967
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0307,
+        "score-accuracy": 0.6956,
+        "score-auc": 0.8521
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0306,
+        "score-accuracy": 0.6508,
+        "score-auc": 0.8029
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0873,
+        "score-accuracy": 0.9956,
+        "score-auc": 0.9997
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0759,
+        "score-accuracy": 0.9456,
+        "score-auc": 0.9831
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0755,
+        "score-accuracy": 0.9359,
+        "score-auc": 0.9721
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0271,
+        "score-accuracy": 0.8695,
+        "score-auc": 0.9807
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0159,
+        "score-accuracy": 0.6256,
+        "score-auc": 0.888
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0159,
+        "score-accuracy": 0.6137,
+        "score-auc": 0.8812
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0275,
+        "score-accuracy": 0.8958,
+        "score-auc": 0.9815
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0176,
+        "score-accuracy": 0.2466,
+        "score-auc": 0.5465
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0177,
+        "score-accuracy": 0.2411,
+        "score-auc": 0.5394
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0592,
+        "score-accuracy": 0.9374,
+        "score-auc": 0.5794
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0332,
+        "score-accuracy": 0.9385,
+        "score-auc": 0.5757
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0316,
+        "score-accuracy": 0.9386,
+        "score-auc": 0.5695
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0494,
+        "score-accuracy": 0.9359,
+        "score-auc": 0.5306
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.028,
+        "score-accuracy": 0.9342,
+        "score-auc": 0.5489
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0411,
+        "score-accuracy": 0.9336,
+        "score-auc": 0.5393
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0216,
+        "score-accuracy": 0.969,
+        "score-precision": 0.9825,
+        "score-recall": 0.9324,
+        "score-f1": 0.9568,
+        "score-auc": 0.9967
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0117,
+        "score-accuracy": 0.8924,
+        "score-precision": 0.8753,
+        "score-recall": 0.8304,
+        "score-f1": 0.8518,
+        "score-auc": 0.9156
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0115,
+        "score-accuracy": 0.8846,
+        "score-precision": 0.8704,
+        "score-recall": 0.8184,
+        "score-f1": 0.8433,
+        "score-auc": 0.9103
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0529,
+        "score-accuracy": 0.9706,
+        "score-auc": 0.9991
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0383,
+        "score-accuracy": 0.9523,
+        "score-auc": 0.996
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0381,
+        "score-accuracy": 0.9457,
+        "score-auc": 0.9953
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0449,
+        "score-accuracy": 0.4065,
+        "score-auc": 0.7199
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0335,
+        "score-accuracy": 0.3037,
+        "score-auc": 0.6207
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0334,
+        "score-accuracy": 0.2913,
+        "score-auc": 0.6068
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.1683,
+        "score-accuracy": 0.5763,
+        "score-auc": 0.7214
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.1327,
+        "score-accuracy": 0.5133,
+        "score-auc": 0.6706
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.1327,
+        "score-accuracy": 0.5128,
+        "score-auc": 0.6729
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0112,
+        "score-accuracy": 0.9875,
+        "score-auc": 0.9994
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0047,
+        "score-accuracy": 0.5488,
+        "score-auc": 0.726
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0045,
+        "score-accuracy": 0.4667,
+        "score-auc": 0.6138
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0325,
+        "score-accuracy": 0.9873,
+        "score-auc": 0.9992
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0173,
+        "score-accuracy": 0.9774,
+        "score-auc": 0.9977
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0173,
+        "score-accuracy": 0.9757,
+        "score-auc": 0.9966
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0152,
+        "score-accuracy": 0.9986,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0083,
+        "score-accuracy": 0.9875,
+        "score-auc": 0.9989
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0082,
+        "score-accuracy": 0.987,
+        "score-auc": 0.9886
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "nopert",
+        "Split": "train",
+        "score-time_iter": 0.0113,
+        "score-accuracy": 0.9126,
+        "score-auc": 0.9669
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "nopert",
+        "Split": "val",
+        "score-time_iter": 0.0047,
+        "score-accuracy": 0.4627,
+        "score-auc": 0.6337
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "nopert",
+        "Split": "test",
+        "score-time_iter": 0.0045,
+        "score-accuracy": 0.4973,
+        "score-auc": 0.5854
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0375,
+        "score-accuracy": 0.9994,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0284,
+        "score-accuracy": 0.9693,
+        "score-auc": 0.9919
+    },
+    {
+        "Dataset": "PyG-CitationFull_PubMed",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0279,
+        "score-accuracy": 0.962,
+        "score-auc": 0.9868
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.2953,
+        "score-accuracy": 0.9995,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.29,
+        "score-accuracy": 0.985,
+        "score-auc": 0.9993
+    },
+    {
+        "Dataset": "PyG-Coauthor_CS",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.2879,
+        "score-accuracy": 0.983,
+        "score-auc": 0.9982
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0156,
+        "score-accuracy": 1.0,
+        "score-precision": 1.0,
+        "score-recall": 1.0,
+        "score-f1": 1.0,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0076,
+        "score-accuracy": 0.9168,
+        "score-precision": 0.9234,
+        "score-recall": 0.9267,
+        "score-f1": 0.9243,
+        "score-auc": 0.9789
+    },
+    {
+        "Dataset": "PyG-Twitch_EN",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0074,
+        "score-accuracy": 0.8919,
+        "score-precision": 0.898,
+        "score-recall": 0.9064,
+        "score-f1": 0.9012,
+        "score-auc": 0.9678
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0355,
+        "score-accuracy": 1.0,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0269,
+        "score-accuracy": 0.8749,
+        "score-auc": 0.9911
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora_ML",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0263,
+        "score-accuracy": 0.8497,
+        "score-auc": 0.9811
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0247,
+        "score-accuracy": 0.9991,
+        "score-precision": 0.9986,
+        "score-recall": 0.9981,
+        "score-f1": 0.9983,
+        "score-auc": 0.9999
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0135,
+        "score-accuracy": 0.9612,
+        "score-precision": 0.9538,
+        "score-recall": 0.8979,
+        "score-f1": 0.9247,
+        "score-auc": 0.9778
+    },
+    {
+        "Dataset": "PyG-GitHub",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0134,
+        "score-accuracy": 0.9566,
+        "score-precision": 0.9476,
+        "score-recall": 0.8827,
+        "score-f1": 0.9138,
+        "score-auc": 0.9722
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0218,
+        "score-accuracy": 0.8926,
+        "score-precision": 0.9872,
+        "score-recall": 0.7676,
+        "score-f1": 0.8636,
+        "score-auc": 0.9705
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0109,
+        "score-accuracy": 0.8443,
+        "score-precision": 0.9161,
+        "score-recall": 0.7122,
+        "score-f1": 0.8011,
+        "score-auc": 0.9145
+    },
+    {
+        "Dataset": "PyG-DeezerEurope",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0108,
+        "score-accuracy": 0.8293,
+        "score-precision": 0.8956,
+        "score-recall": 0.6963,
+        "score-f1": 0.7834,
+        "score-auc": 0.8965
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.013,
+        "score-accuracy": 1.0,
+        "score-precision": 1.0,
+        "score-recall": 1.0,
+        "score-f1": 1.0,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0062,
+        "score-accuracy": 0.9479,
+        "score-precision": 0.9597,
+        "score-recall": 0.8201,
+        "score-f1": 0.8834,
+        "score-auc": 0.976
+    },
+    {
+        "Dataset": "PyG-Twitch_RU",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.006,
+        "score-accuracy": 0.941,
+        "score-precision": 0.9443,
+        "score-recall": 0.8089,
+        "score-f1": 0.8703,
+        "score-auc": 0.9724
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.039,
+        "score-accuracy": 0.9667,
+        "score-auc": 0.9964
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0323,
+        "score-accuracy": 0.3226,
+        "score-auc": 0.6603
+    },
+    {
+        "Dataset": "PyG-Planetoid_CiteSeer",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0323,
+        "score-accuracy": 0.3266,
+        "score-auc": 0.6551
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0238,
+        "score-accuracy": 0.9978,
+        "score-auc": 0.9999
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0151,
+        "score-accuracy": 0.969,
+        "score-auc": 0.9981
+    },
+    {
+        "Dataset": "PyG-Amazon_Photo",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0151,
+        "score-accuracy": 0.9624,
+        "score-auc": 0.9945
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0223,
+        "score-accuracy": 0.9117,
+        "score-auc": 0.9839
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0141,
+        "score-accuracy": 0.3938,
+        "score-auc": 0.7052
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_chameleon",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0141,
+        "score-accuracy": 0.3689,
+        "score-auc": 0.6841
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0175,
+        "score-accuracy": 1.0,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0103,
+        "score-accuracy": 0.4466,
+        "score-auc": 0.8048
+    },
+    {
+        "Dataset": "PyG-Planetoid_Cora",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0106,
+        "score-accuracy": 0.4617,
+        "score-auc": 0.8145
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0141,
+        "score-accuracy": 1.0,
+        "score-precision": 1.0,
+        "score-recall": 1.0,
+        "score-f1": 1.0,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0071,
+        "score-accuracy": 0.915,
+        "score-precision": 0.9188,
+        "score-recall": 0.9423,
+        "score-f1": 0.9296,
+        "score-auc": 0.9749
+    },
+    {
+        "Dataset": "PyG-Twitch_DE",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.007,
+        "score-accuracy": 0.907,
+        "score-precision": 0.9116,
+        "score-recall": 0.9372,
+        "score-f1": 0.9233,
+        "score-auc": 0.9692
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.013,
+        "score-accuracy": 0.9046,
+        "score-auc": 0.9511
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0052,
+        "score-accuracy": 0.4644,
+        "score-auc": 0.7188
+    },
+    {
+        "Dataset": "PyG-WebKB_Texas",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0052,
+        "score-accuracy": 0.5027,
+        "score-auc": 0.5969
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0144,
+        "score-accuracy": 1.0,
+        "score-precision": 1.0,
+        "score-recall": 1.0,
+        "score-f1": 1.0,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0054,
+        "score-accuracy": 0.934,
+        "score-precision": 0.9512,
+        "score-recall": 0.8353,
+        "score-f1": 0.888,
+        "score-auc": 0.9832
+    },
+    {
+        "Dataset": "PyG-Twitch_PT",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0052,
+        "score-accuracy": 0.9156,
+        "score-precision": 0.9242,
+        "score-recall": 0.7955,
+        "score-f1": 0.8542,
+        "score-auc": 0.9686
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.1235,
+        "score-accuracy": 0.9251,
+        "score-auc": 0.5005
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0307,
+        "score-accuracy": 0.5274,
+        "score-auc": 0.4949
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HR",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0306,
+        "score-accuracy": 0.5276,
+        "score-auc": 0.4967
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0122,
+        "score-accuracy": 0.9832,
+        "score-auc": 0.9998
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0055,
+        "score-accuracy": 0.911,
+        "score-auc": 0.9852
+    },
+    {
+        "Dataset": "PyG-LastFMAsia",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0051,
+        "score-accuracy": 0.902,
+        "score-auc": 0.9725
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.6852,
+        "score-accuracy": 0.9972,
+        "score-auc": 0.9998
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.6676,
+        "score-accuracy": 0.9846,
+        "score-auc": 0.9992
+    },
+    {
+        "Dataset": "PyG-Coauthor_Physics",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.675,
+        "score-accuracy": 0.9835,
+        "score-auc": 0.999
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0142,
+        "score-accuracy": 1.0,
+        "score-precision": 1.0,
+        "score-recall": 1.0,
+        "score-f1": 1.0,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0062,
+        "score-accuracy": 0.9424,
+        "score-precision": 0.9691,
+        "score-recall": 0.8396,
+        "score-f1": 0.8991,
+        "score-auc": 0.977
+    },
+    {
+        "Dataset": "PyG-Twitch_ES",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.006,
+        "score-accuracy": 0.9269,
+        "score-precision": 0.9627,
+        "score-recall": 0.7945,
+        "score-f1": 0.8698,
+        "score-auc": 0.9689
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.4237,
+        "score-accuracy": 0.9957,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.4071,
+        "score-accuracy": 0.9253,
+        "score-auc": 0.995
+    },
+    {
+        "Dataset": "PyG-CitationFull_Cora",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.4141,
+        "score-accuracy": 0.9137,
+        "score-auc": 0.9884
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0355,
+        "score-accuracy": 0.9883,
+        "score-auc": 0.9973
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0266,
+        "score-accuracy": 0.5606,
+        "score-auc": 0.7538
+    },
+    {
+        "Dataset": "PyG-Planetoid_PubMed",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0265,
+        "score-accuracy": 0.548,
+        "score-auc": 0.741
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0844,
+        "score-accuracy": 0.9968,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0726,
+        "score-accuracy": 0.9465,
+        "score-auc": 0.9833
+    },
+    {
+        "Dataset": "PyG-CitationFull_DBLP",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0732,
+        "score-accuracy": 0.937,
+        "score-auc": 0.9784
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0214,
+        "score-accuracy": 0.9878,
+        "score-auc": 0.9992
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0112,
+        "score-accuracy": 0.6292,
+        "score-auc": 0.8598
+    },
+    {
+        "Dataset": "PyG-WikiCS",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0112,
+        "score-accuracy": 0.631,
+        "score-auc": 0.8611
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0251,
+        "score-accuracy": 0.8584,
+        "score-auc": 0.9783
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0167,
+        "score-accuracy": 0.3182,
+        "score-auc": 0.6126
+    },
+    {
+        "Dataset": "PyG-Actor",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0171,
+        "score-accuracy": 0.3151,
+        "score-auc": 0.611
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.1072,
+        "score-accuracy": 0.9287,
+        "score-auc": 0.4908
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0242,
+        "score-accuracy": 0.5357,
+        "score-auc": 0.501
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_HU",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0223,
+        "score-accuracy": 0.5358,
+        "score-auc": 0.5007
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.104,
+        "score-accuracy": 0.9282,
+        "score-auc": 0.5045
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0218,
+        "score-accuracy": 0.5361,
+        "score-auc": 0.4912
+    },
+    {
+        "Dataset": "PyG-GemsecDeezer_RO",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0201,
+        "score-accuracy": 0.5358,
+        "score-auc": 0.4855
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0155,
+        "score-accuracy": 1.0,
+        "score-precision": 1.0,
+        "score-recall": 1.0,
+        "score-f1": 1.0,
+        "score-auc": 1.0
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0075,
+        "score-accuracy": 0.9151,
+        "score-precision": 0.9161,
+        "score-recall": 0.856,
+        "score-f1": 0.8829,
+        "score-auc": 0.9752
+    },
+    {
+        "Dataset": "PyG-Twitch_FR",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0075,
+        "score-accuracy": 0.9047,
+        "score-precision": 0.9077,
+        "score-recall": 0.8406,
+        "score-f1": 0.8704,
+        "score-auc": 0.9685
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0399,
+        "score-accuracy": 0.9914,
+        "score-auc": 0.9996
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0299,
+        "score-accuracy": 0.9461,
+        "score-auc": 0.9944
+    },
+    {
+        "Dataset": "PyG-Amazon_Computers",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0302,
+        "score-accuracy": 0.9382,
+        "score-auc": 0.9896
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.1153,
+        "score-accuracy": 0.8045,
+        "score-auc": 0.9234
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0305,
+        "score-accuracy": 0.2709,
+        "score-auc": 0.5946
+    },
+    {
+        "Dataset": "PyG-WikipediaNetwork_squirrel",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0304,
+        "score-accuracy": 0.2611,
+        "score-auc": 0.5858
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.1365,
+        "score-accuracy": 0.5556,
+        "score-auc": 0.7592
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.1159,
+        "score-accuracy": 0.4133,
+        "score-auc": 0.5854
+    },
+    {
+        "Dataset": "PyG-Flickr",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.1152,
+        "score-accuracy": 0.4162,
+        "score-auc": 0.5874
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0128,
+        "score-accuracy": 0.9817,
+        "score-auc": 0.9955
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0053,
+        "score-accuracy": 0.5438,
+        "score-auc": 0.7825
+    },
+    {
+        "Dataset": "PyG-WebKB_Wisconsin",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0052,
+        "score-accuracy": 0.4941,
+        "score-auc": 0.7018
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0179,
+        "score-accuracy": 0.9975,
+        "score-auc": 0.9999
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0089,
+        "score-accuracy": 0.9472,
+        "score-auc": 0.9838
+    },
+    {
+        "Dataset": "PyG-FacebookPagePage",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0085,
+        "score-accuracy": 0.939,
+        "score-auc": 0.9793
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0186,
+        "score-accuracy": 0.9787,
+        "score-auc": 0.9997
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0097,
+        "score-accuracy": 0.9208,
+        "score-auc": 0.9967
+    },
+    {
+        "Dataset": "PyG-CitationFull_CiteSeer",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0098,
+        "score-accuracy": 0.9123,
+        "score-auc": 0.9892
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_NoEdges",
+        "Split": "train",
+        "score-time_iter": 0.0137,
+        "score-accuracy": 0.9931,
+        "score-auc": 0.9997
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_NoEdges",
+        "Split": "val",
+        "score-time_iter": 0.0057,
+        "score-accuracy": 0.5814,
+        "score-auc": 0.8044
+    },
+    {
+        "Dataset": "PyG-WebKB_Cornell",
+        "Perturbation": "pert_NoEdges",
+        "Split": "test",
+        "score-time_iter": 0.0056,
+        "score-accuracy": 0.5243,
+        "score-auc": 0.7166
+    }
+]

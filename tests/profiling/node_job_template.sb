@@ -1,0 +1,8 @@
+#!/bin/bash --login
+
+conda activate gtaxogym
+cd $SLURM_SUBMIT_DIR
+cd ../..
+
+echo $@
+eval $@

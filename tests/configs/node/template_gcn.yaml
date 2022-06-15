@@ -1,0 +1,38 @@
+out_dir: tests/results
+logging_level: DETAIL
+metric_best: auc
+dataset:
+  task: node
+  transductive: True
+  split: [0.8, 0.1, 0.1]
+  split_mode: random
+  transform: none
+perturbation:
+  type: none
+train:
+  sampler: full_batch
+  batch_size: 1
+  eval_period: 20
+  ckpt_period: 100
+model:
+  type: gcn
+  loss_fun: cross_entropy
+  edge_decoding: dot
+  graph_pooling: add
+gnn:
+  layers_pre_mp: 2
+  layers_mp: 5
+  layers_post_mp: 2
+  dim_inner: 128
+  layer_type: gcnconv
+  stage_type: stack
+  batchnorm: True
+  act: relu
+  dropout: 0.0
+  agg: add
+  normalize_adj: False
+optim:
+  optimizer: adam
+  base_lr: 0.01
+  scheduler: cos
+  weight_decay: 0.0

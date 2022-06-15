@@ -1,0 +1,19 @@
+#!/bin/bash --login
+
+#SBATCH -N 1
+#SBATCH -c 1
+#SBATCH -t 3:55:00
+#SBATCH --mem=32GB
+#SBATCH --gres=gpu:v100:1
+#SBATCH -A cmse
+#SBATCH -o ../../slurm_history/slurm-%x-%A.out
+
+if [[ $CONDA_DEFAULT_ENV != gtaxogym ]]; then
+    conda activate gtaxogym
+fi
+
+cd $SLURM_SUBMIT_DIR
+cd ../..
+
+echo $@
+eval $@
