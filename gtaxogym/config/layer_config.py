@@ -8,3 +8,14 @@ def cheb_cfg(cfg):
     :return: perturbation configuration.
     '''
     cfg.gnn.cheb_K = 2
+
+
+@register_config('gcn2_config')
+def gcn2_cfg(cfg):
+    r"""
+    This function sets the default alpha/theta values for GCN2 convolutions, also adds support for additional residual connections
+    :return: perturbation configuration.
+    """
+    cfg.gnn.alpha = 0.2
+    cfg.gnn.theta = None
+    cfg.gnn.residual = False
