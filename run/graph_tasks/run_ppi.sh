@@ -21,10 +21,12 @@ function test_dataset {
       script4="${commonstr} ${common_params} run_multiple_splits [8,9]"
 
     elif [[ "$dataset_format" == PyG-PPI ]]; then
-      script1="${commonstr} --repeat 3 seed 0 ${common_params} dataset.split_mode standard gnn.head inductive_node"
-      script1="${commonstr} --repeat 3 seed 3 ${common_params} dataset.split_mode standard gnn.head inductive_node"
-      script1="${commonstr} --repeat 2 seed 6 ${common_params} dataset.split_mode standard gnn.head inductive_node"
-      script1="${commonstr} --repeat 2 seed 8 ${common_params} dataset.split_mode standard gnn.head inductive_node"
+      script1="${commonstr} --repeat 5 seed 0 ${common_params} dataset.split_mode standard gnn.head inductive_node"
+      script2="${commonstr} --repeat 5 seed 5 ${common_params} dataset.split_mode standard gnn.head inductive_node"
+      #script1="${commonstr} --repeat 3 seed 0 ${common_params} dataset.split_mode standard gnn.head inductive_node"
+      #script1="${commonstr} --repeat 3 seed 3 ${common_params} dataset.split_mode standard gnn.head inductive_node"
+      #script1="${commonstr} --repeat 2 seed 6 ${common_params} dataset.split_mode standard gnn.head inductive_node"
+      #script1="${commonstr} --repeat 2 seed 8 ${common_params} dataset.split_mode standard gnn.head inductive_node"
 
     elif [[ "$dataset_format" == PyG-GNNBenchmarkDataset ]]; then
       gbd_params=""
@@ -50,18 +52,14 @@ function test_dataset {
 
     sbatch run_exp.sh "$script1"
     sbatch run_exp.sh "$script2"
-    sbatch run_exp.sh "$script3"
-    sbatch run_exp.sh "$script4"
+    #sbatch run_exp.sh "$script1"
+    #sbatch run_exp.sh "$script2"
+    #sbatch run_exp.sh "$script3"
+    #sbatch run_exp.sh "$script4"
 }
 
-for MODEL in default_gcn2; do
-  for PERTURB in none NoEdges NoFeatures Fragmented-k1 Fragmented-k2 Fragmented-k3; do
-    test_dataset ${MODEL} PyG-TUDataset classification DD ${PERTURB}
-    test_dataset ${MODEL} PyG-TUDataset classification REDDIT-BINARY ${PERTURB}
-    test_dataset ${MODEL} PyG-TUDataset classification REDDIT-MULTI-5K ${PERTURB}
-    test_dataset ${MODEL} PyG-MalNetTiny classification LocalDegreeProfile ${PERTURB}
-
-    test_dataset ${MODEL} PyG-GNNBenchmarkDataset classification MNIST ${PERTURB}
-    test_dataset ${MODEL} PyG-GNNBenchmarkDataset classification CIFAR10 ${PERTURB}
+for MODEL in default_cheb default_gatedgcn default_gin_small default_gcn2; do
+  for PERTURB in none NoEdges NoFeatures NodeDegree Fragmented-k1 Fragmented-k2 Fragmented-k3 FiedlerFragmentation BandpassFiltering-hi BandpassFiltering-mid BandpassFiltering-lo RandomNodeFeatures RandomEdgeRewire; do
+    test_dataset ${MODEL} PyG-PPI classification_multilabel ppi ${PERTURB}
   done
 done

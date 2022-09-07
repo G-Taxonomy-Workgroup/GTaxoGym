@@ -62,7 +62,7 @@ function test_dataset {
     sbatch run_exp.sh "$script5"
 }
 
-for MODEL in default_gcn default_gin; do
+for MODEL in default_cheb default_gatedgcn default_gin_small default_gcn2; do
   for PERTURB in none NoEdges FullyConnected NoFeatures NodeDegree Fragmented-k1 Fragmented-k2 Fragmented-k3 FiedlerFragmentation BandpassFiltering-hi BandpassFiltering-mid BandpassFiltering-lo RandomNodeFeatures RandomEdgeRewire; do
     test_dataset ${MODEL} OGB classification_multilabel ogbg-molpcba ${PERTURB}
   done

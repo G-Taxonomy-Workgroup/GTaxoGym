@@ -14,3 +14,5 @@ sh node_all.sh Fragmented-k3
 sh node_all.sh WaveletBankFiltering-lo
 sh node_all.sh WaveletBankFiltering-mid
 sh node_all.sh WaveletBankFiltering-hi
+sh node_all.sh RandomNodeFeatures
+sh node_all.sh RandomEdgeRewire
