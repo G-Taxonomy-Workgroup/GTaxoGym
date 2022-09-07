@@ -3,6 +3,7 @@ import logging
 import os
 
 import numpy as np
+import torch
 from sklearn.model_selection import KFold, StratifiedKFold, ShuffleSplit
 from torch_geometric.graphgym.config import cfg
 from torch_geometric.graphgym.loader import index2mask, set_dataset_attr
@@ -118,13 +119,15 @@ def setup_random_split(dataset):
             random_state=cfg.seed
         ).split(dataset.data.y[val_test_index], dataset.data.y[val_test_index])
     )
-    val_index = val_test_index[val_index]
-    test_index = val_test_index[test_index]
+
+    train_index = torch.LongTensor(train_index)
+    val_index = torch.LongTensor(val_test_index[val_index])
+    test_index = torch.LongTensor(val_test_index[test_index])
 
     set_dataset_splits(dataset, [train_index, val_index, test_index])
 
 
-def set_dataset_splits(dataset, splits):
+def set_dataset_splits(dataset, splits, split_names=None):
     """Set given splits to the dataset object.
 
     Args:
@@ -148,9 +151,13 @@ def set_dataset_splits(dataset, splits):
 
     task_level = cfg.dataset.task
     if task_level == 'node':
-        split_names = ['train_mask', 'val_mask', 'test_mask']
+        if split_names is not None:
+            assert len(splits) == len(split_names)
+        else:
+            split_names = ['train_mask', 'val_mask', 'test_mask']
         for split_name, split_index in zip(split_names, splits):
-            mask = index2mask(split_index, size=dataset.data.y.shape[0])
+            split_index_t = torch.LongTensor(split_index)
+            mask = index2mask(split_index_t, size=dataset.data.y.shape[0])
             set_dataset_attr(dataset, split_name, mask, len(mask))
 
     elif task_level == 'graph':

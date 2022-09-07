@@ -303,6 +303,7 @@ class Fragmented(BaseTransform):
                 f'{100 * edge_mask.sum() / edge_mask.size:.2f}%'
             )
 
+        data.edge_attr = None
         return data
 
     @staticmethod
