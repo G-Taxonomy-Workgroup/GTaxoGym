@@ -1,4 +1,5 @@
 import logging
+import warnings
 
 import numpy as np
 import torch
@@ -10,6 +11,144 @@ from torch_geometric.graphgym.config import cfg
 from torch_geometric.transforms import BaseTransform
 
 from gtaxogym.utils import timeit
+
+
+class RandomNodeFeatures(BaseTransform):
+    """Random node features perturbation.
+
+    Generate k-dimensional node features uniformly at random and replace the
+    original node features.
+
+    Args:
+        feat_dim (int): Node feature dimensions.
+        min_val (float): Lower-bound of the uniform random distribution.
+        max_val (float): Uppder-bound of the uniform random distribution.
+
+    Raises:
+        ValueError: If max_val is no greater than min_val.
+
+    """
+
+    def __init__(self, feat_dim: int, min_val: float, max_val: float):
+        self.feat_dim = feat_dim
+        self.min_val = min_val
+        self.max_val = max_val
+        if max_val <= min_val:
+            raise ValueError(
+                "Upper-bound (max_val) of the uniform random distribution "
+                f"must be greater than the lower-bound, got {max_val=!r} "
+                f"and {min_val=!r}",
+            )
+
+    def __call__(self, data):
+        torch.manual_seed(cfg.seed)
+        unit_rand = torch.rand((data.num_nodes, self.feat_dim),
+                               device=data.x.device)
+        scale = self.max_val - self.min_val
+        data.x = unit_rand * scale + self.min_val
+        logging.detail(f"Random features of first 10 nodes:\n{data.x[:10]}")
+        return data
+
+
+class RandomEdgeRewire(BaseTransform):
+    """Random edge rewiring perturbation.
+
+    Randomly rewire edges by swapping neighbors between two edges, assuming
+    the graph is unweighted and undirected. By doing so, the degree
+    distribution will be exactly preserved.
+
+    Args:
+        rewire_ratio (float): Ratio of edges to be rewired. Note that when
+            :attr:`with_replacement` is set, the actual rewire ratio will be
+            smaller.
+        with_replacement (bool): If set to False, then only rewire original
+            edges. In other words, if an edge has been rewired, it will not
+            be rewired again.
+
+    Raises:
+        ValueError: If the input graph is weighted, as indicated by the
+            presence of :attr:`edge_weight`, during execution of __call__.
+
+    """
+
+    MAX_SAMPLING_ITER = 1000
+
+    def __init__(self, rewire_ratio: float, with_replacement: bool):
+        self.rewire_ratio = rewire_ratio
+        self.with_replacement = with_replacement
+
+    @staticmethod
+    def _sample_edge(
+        rng: np.random.Generator,
+        n_edges: int,
+        rewired_ind: np.ndarray,
+        with_replacement: bool,
+    ):
+        """Sample a candidate edge to be rewired (w/ or w/o replacement)."""
+        candidate_edge = rng.integers(n_edges)
+
+        if not with_replacement:
+            # WARNING: this while loop will be very slow if the rewire_ratio
+            # becomes too big, e.g., 0.99. To fix this, one solution is to keep
+            # track of un-rewired edges as a set and then draw from this set,
+            # and keep updating the bucket as we go.
+            iter_count = 0
+            while rewired_ind[candidate_edge]:
+                candidate_edge = rng.integers(n_edges)
+                iter_count += 1
+
+                if iter_count > RandomEdgeRewire.MAX_SAMPLING_ITER:
+                    logging.warning("Number of edge sampling exceeds limit "
+                                    f"{RandomEdgeRewire.MAX_SAMPLING_ITER=}, "
+                                    "quit resampling.")
+                    break
+
+        return candidate_edge
+
+    def __call__(self, data):
+        if "edge_weight" in data:
+            warnings.warn("RandomEdgeRewire assumes unweighted graph, "
+                          "but detected 'edge_weight', removing now.")
+            data["edge_weight"] = None
+
+        if "edge_attr" in data:
+            warnings.warn("RandomEdgeRewire assumes unweighted graph, "
+                          "but detected 'edge_attr', removing now.")
+            data["edge_attr"] = None
+
+        if data.edge_index.shape[1] == 0:  # no edges at all, nothing to rewire
+            return data
+
+        # Get undirected edge pairs and remove any self-loops
+        edgeset = set(map(frozenset, data.edge_index.detach().cpu().numpy().T))
+        edgeset = list(filter(lambda x: len(x) == 2, edgeset))
+        n_edges = len(edgeset)
+        edges_ary = np.stack(list(map(list, edgeset)))
+        rewired_ind = np.zeros(n_edges, dtype=bool)
+
+        rng = np.random.default_rng(cfg.seed)
+        wr = self.with_replacement
+        for _ in range(int(self.rewire_ratio * n_edges // 2)):
+            edge1 = self._sample_edge(rng, n_edges, rewired_ind, wr)
+            edge2 = self._sample_edge(rng, n_edges, rewired_ind, wr)
+            node11, node12 = edges_ary[edge1]
+            node21, node22 = edges_ary[edge2]
+
+            if rng.integers(2):  # flip a coin to decide how to rewire
+                node21, node22 = node22, node21
+
+            # Rewire edges and mark rewired
+            edges_ary[edge1] = node11, node21
+            edges_ary[edge2] = node12, node22
+            rewired_ind[edge1] = rewired_ind[edge2] = 1
+
+        logging.detail(f"   Amount of edges rewired: {rewired_ind.mean():.2%}")
+
+        # Convert undirected edges back to directed form (still undirected)
+        directed_edges_ary = np.hstack((edges_ary.T, edges_ary.T[[1, 0]]))
+        data.edge_index = data.edge_index.new_tensor(directed_edges_ary)
+
+        return data
 
 
 def NoFeatures():

@@ -62,3 +62,23 @@ def perturbation_cfg(cfg):
 
     # Normalization type ('sym' or 'rw')
     cfg.perturbation.WaveletBankFiltering_norm = 'sym'
+
+    # ----------------------------------------------------------------------- #
+    # RandomEdgeRewire options
+    # ----------------------------------------------------------------------- #
+    # Ratio of edges to the rewired (this is equivalent to twice the number of
+    # rewiring steps, since each step rewires two edges)
+    cfg.perturbation.RandomEdgeRewire_rewire_ratio = 0.5
+
+    # Only rewire orignal (unrewired) edges if set to True
+    cfg.perturbation.RandomEdgeRewire_with_replacement = False
+
+    # ----------------------------------------------------------------------- #
+    # RandomNodeFeatures options
+    # ----------------------------------------------------------------------- #
+    # Node feature dimensions
+    cfg.perturbation.RandomNodeFeatures_feat_dim = 1
+
+    # Uniform sampling parameters
+    cfg.perturbation.RandomNodeFeatures_min_val = -1
+    cfg.perturbation.RandomNodeFeatures_max_val = 1
