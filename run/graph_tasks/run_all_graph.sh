@@ -19,6 +19,13 @@ function test_dataset {
       script2="${commonstr} ${common_params} run_multiple_splits [3,4,5]"
       script3="${commonstr} ${common_params} run_multiple_splits [6,7]"
       script4="${commonstr} ${common_params} run_multiple_splits [8,9]"
+
+    elif [[ "$dataset_format" == PyG-PPI ]]; then
+      script1="${commonstr} --repeat 3 seed 0 ${common_params} dataset.split_mode standard gnn.head inductive_node"
+      script2="${commonstr} --repeat 3 seed 3 ${common_params} dataset.split_mode standard gnn.head inductive_node"
+      script3="${commonstr} --repeat 2 seed 6 ${common_params} dataset.split_mode standard gnn.head inductive_node"
+      script4="${commonstr} --repeat 2 seed 8 ${common_params} dataset.split_mode standard gnn.head inductive_node"
+
     elif [[ "$dataset_format" == PyG-GNNBenchmarkDataset ]]; then
       gbd_params=""
       if [[ "$dataset_name" == MNIST ]] || [[ "$dataset_name" == CIFAR10 ]] || [[ "$dataset_name" == PATTERN ]] || [[ "$dataset_name" == CLUSTER ]]; then
@@ -44,10 +51,11 @@ function test_dataset {
     sbatch run_exp.sh "$script1"
     sbatch run_exp.sh "$script2"
     sbatch run_exp.sh "$script3"
+    sbatch run_exp.sh "$script4"
 }
 
-for MODEL in default_gcn default_gin; do
-  for PERTURB in for PERTURB in none NoEdges FullyConnected NoFeatures NodeDegree Fragmented-k1 Fragmented-k2 Fragmented-k3 FiedlerFragmentation BandpassFiltering-hi BandpassFiltering-mid BandpassFiltering-lo; do
+for MODEL in default_gat; do
+  for PERTURB in none NoEdges FullyConnected NoFeatures NodeDegree Fragmented-k1 Fragmented-k2 Fragmented-k3 FiedlerFragmentation BandpassFiltering-hi BandpassFiltering-mid BandpassFiltering-lo RandomNodeFeatures RandomEdgeRewire; do
     test_dataset ${MODEL} PyG-TUDataset classification DD ${PERTURB}
     test_dataset ${MODEL} PyG-TUDataset classification ENZYMES ${PERTURB}
     test_dataset ${MODEL} PyG-TUDataset classification PROTEINS ${PERTURB}
@@ -70,8 +78,10 @@ for MODEL in default_gcn default_gin; do
 
     test_dataset ${MODEL} OGB classification ogbg-molhiv ${PERTURB}
     test_dataset ${MODEL} OGB classification_multilabel ogbg-moltox21 ${PERTURB}
+    test_dataset ${MODEL} OGB classification_multilabel ogbg-molpcba ${PERTURB}
 
     test_dataset ${MODEL} PyG-MalNetTiny classification LocalDegreeProfile ${PERTURB}
+    test_dataset ${MODEL} PyG-PPI classification_multilabel ppi ${PERTURB}
 
     test_dataset ${MODEL} nx classification smallworld ${PERTURB}
     test_dataset ${MODEL} nx classification scalefree ${PERTURB}
