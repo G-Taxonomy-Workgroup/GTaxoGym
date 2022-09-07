@@ -179,6 +179,7 @@ class NodeDegree(BaseTransform):
         'ZINC': 4,
         'MNIST': 8,
         'CIFAR10': 8,
+        'PPI': 720
     }
 
     def __init__(self, dataset, is_transductive):
@@ -302,6 +303,7 @@ class Fragmented(BaseTransform):
                 f'{100 * edge_mask.sum() / edge_mask.size:.2f}%'
             )
 
+        data.edge_attr = None
         return data
 
     @staticmethod
