@@ -179,6 +179,7 @@ class NodeDegree(BaseTransform):
         'ZINC': 4,
         'MNIST': 8,
         'CIFAR10': 8,
+        'PPI': 720
     }
 
     def __init__(self, dataset, is_transductive):

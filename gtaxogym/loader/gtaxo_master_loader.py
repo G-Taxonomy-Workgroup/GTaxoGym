@@ -1,14 +1,16 @@
 import logging
 import os.path as osp
 from functools import partial
+from itertools import chain, accumulate
+from typing import List
 
 import torch_geometric.transforms as T
 from torch_geometric.datasets import (Actor, Amazon, CitationFull, Coauthor,
                                       DeezerEurope, FacebookPagePage, Flickr,
                                       GemsecDeezer, GitHub, GNNBenchmarkDataset,
-                                      LastFMAsia, Planetoid, Reddit2, TUDataset,
-                                      Twitch, WikiCS, WebKB, WikipediaNetwork,
-                                      Yelp)
+                                      LastFMAsia, Planetoid, PPI, Reddit2,
+                                      TUDataset, Twitch, WikiCS, WebKB,
+                                      WikipediaNetwork, Yelp)
 from torch_geometric.graphgym.config import cfg
 from torch_geometric.graphgym.loader import load_pyg, load_ogb, set_dataset_attr
 from torch_geometric.graphgym.register import register_loader
@@ -123,6 +125,10 @@ def load_dataset_master(format, name, dataset_dir):
         elif pyg_dataset_id == 'Planetoid':
             dataset = Planetoid(dataset_dir, name)
 
+        elif pyg_dataset_id == 'PPI':
+            dataset = preformat_PPI(dataset_dir)
+            dataset.name = 'PPI'
+
         elif pyg_dataset_id == 'Reddit2':
             dataset = load_pyg_single(Reddit2, dataset_dir, pyg_dataset_id,
                                       name)
@@ -198,7 +204,14 @@ def load_dataset_master(format, name, dataset_dir):
     log_loaded_dataset(dataset, format, name)
 
     # Set standard dataset train/val/test splits if needed.
-    if name in ['MNIST', 'CIFAR10', 'PATTERN', 'CLUSTER']:
+    if format in ['PyG-PPI']:
+        if cfg.dataset.split_mode != 'standard':
+            raise ValueError(
+                "Only 'standard' splits are supported for {format} datasets")
+        set_dataset_splits(dataset, dataset.split_idxs, dataset.split_names)
+        delattr(dataset, 'split_idxs')
+        delattr(dataset, 'split_names')
+    elif name in ['MNIST', 'CIFAR10', 'PATTERN', 'CLUSTER']:
         if cfg.dataset.split_mode != 'standard':
             raise ValueError(
                 "Only 'standard' splits are supported for GNNBenchmarkDataset")
@@ -213,6 +226,46 @@ def load_dataset_master(format, name, dataset_dir):
     prepare_splits(dataset)
     # T.ToUndirected(dataset)  # convert all graphs to be undirected
 
+    return dataset
+
+
+def _merge_splits(datasets):
+    """Merge a list of PyG dataset into a single dataset.
+
+    Note:
+        The original splits are recorded in a newly created :attr:`split_idxs`.
+
+    """
+    # TODO: replace merge_splits within preformat_GNNBenchmarkDataset
+    def pairwise_range(x):
+        # e.g. [1, 3, 4, 7] -> [[1, 2], [3], [4, 5, 6]]
+        prev = None
+        for i, j in enumerate(x):
+            if i > 0:
+                yield list(range(prev, j))
+            prev = j
+
+    sizes = list(map(len, datasets))
+    data_list = list(
+        chain.from_iterable(
+            map(dataset.get, range(size))
+            for dataset, size in zip(datasets, sizes)
+        ),
+    )  # chain all datasets into a single list
+    split_idxs = list(pairwise_range(accumulate(sizes, initial=0)))
+
+    datasets[0]._indices = None
+    datasets[0]._data_list = data_list
+    datasets[0].data, datasets[0].slices = datasets[0].collate(data_list)
+    datasets[0].split_idxs: List[List[int]] = split_idxs
+
+    return datasets[0]
+
+
+def preformat_PPI(dataset_dir):
+    splits = ['train', 'val', 'test']
+    dataset = _merge_splits([PPI(root=dataset_dir, split=s) for s in splits])
+    dataset.split_names = splits
     return dataset
 
 
