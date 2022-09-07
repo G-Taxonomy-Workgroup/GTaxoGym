@@ -156,9 +156,13 @@ def main():
             if not os.path.isfile(best_agg_fp):
                 logging.warning(f'File does not exist: {best_agg_fp!r}')
                 continue
-            with open(best_agg_fp, 'r') as f:
-                scores = json.load(f)
-                add_result(results, scores, dataset_name, pert_type, split)
+
+            try:
+                with open(best_agg_fp, 'r') as f:
+                    scores = json.load(f)
+                    add_result(results, scores, dataset_name, pert_type, split)
+            except:
+                logging.warning(f'Could not print: {str(best_agg_fp)}')
 
     check_completeness(datasets, perturbations, results)
 
