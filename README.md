@@ -1,6 +1,5 @@
 # GTaxoGym: Taxonomy of Benchmarks in Graph Representation Learning
 
-[![arXiv](https://img.shields.io/badge/arXiv-2206.07729-b31b1b.svg)](https://arxiv.org/abs/2206.07729)
 ![GTaxoGym-viz](./GTaxoGym.png)
 
 Graph Neural Networks (GNNs) extend the success of neural networks to graph-structured data by accounting for their intrinsic geometry. While extensive research has been done on developing GNN models with superior performance according to a collection of graph representation learning benchmarks, it is currently not well understood what aspects of a given model are probed by them. For example, to what extent do they test the ability of a model to leverage graph structure vs. node features?
