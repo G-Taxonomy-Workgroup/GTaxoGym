@@ -3,7 +3,6 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --gres=gpu:1
 #SBATCH --mem=48G
-#SBATCH -o /home/mila/s/semih.canturk/GTaxoGym/logs/slurm-%j.out
 module load cuda/11.1/cudnn/8.0 miniconda/3
 conda activate gtaxogym
 

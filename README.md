@@ -61,17 +61,3 @@ Or specify a particular test module, e.g.:
 ```bash
 python -m unittest -v unittests.test_fast_auroc_multi
 ```
-
-
-## Citation
-
-If you find this work useful, please cite our paper:
-```bibtex
-@article{liu2022GTaxonomy,
-  title={Taxonomy of Benchmarks in Graph Representation Learning}, 
-  author={Liu, Renming and Cantürk, Semih and Wenkel, Frederik and Sandfelder, Dylan and Kreuzer, Devin and Little, Anna and McGuire, Sarah and O'Bray, Leslie and Perlmutter, Michael and Rieck, Bastian and Hirn, Matthew and Wolf, Guy and Rampášek, Ladislav},
-  journal={arXiv:2206.07729},
-  year={2022}
-}
-
-```
