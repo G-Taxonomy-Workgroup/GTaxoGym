@@ -1,3 +1,4 @@
+import copy
 import os
 import os.path as osp
 
@@ -48,6 +49,8 @@ def plot_aurocs(
     score_mat,
     datasets,
     perturbations,
+    assignment_dict=None,
+    palette=None,
     figsize=(14, 6),
     dendrogram_pos_param=(0.285, 2.8),
     score_col_pos=[0.506, 0.072, 0.05, 0.71],
@@ -63,6 +66,9 @@ def plot_aurocs(
             ``perturbations``, and the rows are in the order of ``datasets``.
         datasets: list of datasets used.
         perturbations: list of perturbations used.
+        assignment_dict: dictionary mapping dataset name to cluster name;
+            this is for dataset name coloring by its cluster assignment.
+        palette: color palette for color-coding clusters.
         figsize: size of the final figure.
         dendrogram_pos_param: left-shift, width-scale.
         score_col_pos: left-right, up-down, width, height.
@@ -72,17 +78,29 @@ def plot_aurocs(
 
     """
     checkdir(save_dir)
-    score_diff_percentage_mat = np.nan_to_num(
-        score_mat[:, 1:] / score_mat[:, 0:1],
-        nan=0,
-    )
+    score_diff_percentage_mat = score_mat[:, 1:] / score_mat[:, 0:1]
     score_diff_log2_mat = np.log2(score_diff_percentage_mat)
+
+    # Ignore perturbations that have missing values.
+    score_diff_log2_mat_sanitized = copy.deepcopy(score_diff_log2_mat)
+    if not np.all(np.isfinite(score_diff_log2_mat_sanitized)):
+        missing_mask = np.isfinite(score_diff_log2_mat_sanitized).astype(int)
+        col_missing = np.prod(missing_mask, axis=0)
+        for col_i, (is_ok, pert) in enumerate(zip(col_missing, perturbations[1:])):
+            if is_ok:
+                continue
+            print(f"Missing results for perturbation {pert} -- "
+                  f"Ignoring this perturbations in clustering")
+            missing_ds = [ds for is_finite, ds in
+                          zip(missing_mask[:, col_i], datasets) if not is_finite]
+            print(f"   DS: {missing_ds}")
+            score_diff_log2_mat_sanitized[:, col_i] = 0.
 
     # Cluster based on log2 ratio, but annotate with percentage.
     #   Precomputing the clustering outside `sns.clustermap` so that
     #   we can set the method and `optimal_ordering=True`.
     row_linkage = scipy.cluster.hierarchy.linkage(
-        score_diff_log2_mat,
+        score_diff_log2_mat_sanitized,
         method='ward', metric='euclidean',
         optimal_ordering=True
     )
@@ -113,7 +131,7 @@ def plot_aurocs(
     )
     sns.heatmap(
         orig_score_df,
-        cmap=sns.color_palette('Blues', as_cmap=True),
+        cmap='Blues',
         linewidths=1.0,
         vmin=0.5,
         vmax=1,
@@ -153,6 +171,15 @@ def plot_aurocs(
             horizontalalignment='left',
             x=-y_tick_left_shift,
         )
+        # Color dataset names by their cluster assignment
+        if assignment_dict is not None:
+            for ytick in ax.get_yticklabels():
+                text = ytick.get_text().rstrip()
+                if text in assignment_dict:
+                    cluster = assignment_dict[text]
+                    cluster = int(cluster.split('-')[1]) - 1
+                    # print(text, cluster)
+                    ytick.set_bbox(dict(ec="grey", fc=palette[cluster], alpha=0.29))
 
     if save_dir is not None:
         plt.savefig(osp.join(save_dir, 'aurocs.pdf'), bbox_inches='tight')
@@ -295,8 +322,28 @@ def plot_pca(
     **kwargs
 ):
     checkdir(save_dir)
-    score_diff_mat = np.nan_to_num(score_mat[:, 1:] / score_mat[:, 0:1], nan=0)
+    score_diff_mat = score_mat[:, 1:] / score_mat[:, 0:1]
     score_diff_mat = np.log2(score_diff_mat)
+
+    # Ignore perturbations that have missing values.
+    if not np.all(np.isfinite(score_diff_mat)):
+        perturbations = copy.deepcopy(perturbations)  # Local copy.
+        missing_mask = np.isfinite(score_diff_mat).astype(int)
+        col_missing = np.prod(missing_mask, axis=0)
+        for col_i, (is_ok, pert) in enumerate(list(zip(col_missing,
+                                                       perturbations[1:]))):
+            if is_ok:
+                continue
+            print(f"Missing results for perturbation {pert} -- "
+                  f"Ignoring this perturbations in clustering")
+            missing_ds = [ds for is_finite, ds in
+                          zip(missing_mask[:, col_i], datasets) if not is_finite]
+            print(f"   DS: {missing_ds}")
+            # Remove the incomplete perturbation.
+            # score_diff_mat[:, col_i] = 0.
+            score_diff_mat = np.delete(score_diff_mat, col_i, axis=1)
+            perturbations.remove(pert)
+
 
     pca = PCA(n_components=min([len(perturbations), len(datasets)]) - 1)
     pca.fit(score_diff_mat)
@@ -386,7 +433,7 @@ def plot_pca(
                 / score_diff_mat.std(axis=0)
         )
         sns.heatmap(
-            score_diff_mat_stdz.T @ score_diff_mat_stdz / len(datasets),
+            score_diff_mat_stdz.T @ score_diff_mat_stdz / (len(datasets) - 1),
             annot=True,
             fmt='.1f',
             xticklabels=perturbations[1:],

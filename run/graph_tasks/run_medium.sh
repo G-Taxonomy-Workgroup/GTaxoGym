@@ -44,12 +44,13 @@ function test_dataset {
     sbatch run_exp.sh "$script2"
 }
 
-for MODEL in default_gcn2; do
-  for PERTURB in none NoEdges FullyConnected NoFeatures NodeDegree Fragmented-k1 Fragmented-k2 Fragmented-k3 FiedlerFragmentation BandpassFiltering-hi BandpassFiltering-mid BandpassFiltering-lo; do
+for MODEL in default_gcn default_gin; do
+  for PERTURB in none NoEdges FullyConnected NoFeatures NodeDegree Fragmented-k1 Fragmented-k2 Fragmented-k3 FiedlerFragmentation BandpassFiltering-hi BandpassFiltering-mid BandpassFiltering-lo RandomNodeFeatures RandomEdgeRewire; do
     test_dataset ${MODEL} PyG-TUDataset classification COLLAB ${PERTURB}
     test_dataset ${MODEL} PyG-GNNBenchmarkDataset classification PATTERN ${PERTURB}
     test_dataset ${MODEL} PyG-GNNBenchmarkDataset classification CLUSTER ${PERTURB}
     test_dataset ${MODEL} OGB classification ogbg-molhiv ${PERTURB}
+    test_dataset ${MODEL} OGB classification PCQM4Mv2-subset ${PERTURB}
     test_dataset ${MODEL} PyG-PPI classification_multilabel ppi ${PERTURB}
   done
 done

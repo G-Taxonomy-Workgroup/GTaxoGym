@@ -1,3 +1,7 @@
+dataset/
+
+viz/outputs
+
 slurm_history/
 datasets
 datasets/

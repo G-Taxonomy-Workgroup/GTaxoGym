@@ -84,8 +84,8 @@ function test_dataset {
     sbatch run_exp.sh "$script10"
 }
 
-for MODEL in default_gcn2; do
-  for PERTURB in FullyConnected NodeDegree FiedlerFragmentation BandpassFiltering-hi BandpassFiltering-mid BandpassFiltering-lo; do
+for MODEL in default_gcn default_gin; do
+  for PERTURB in none NoEdges FullyConnected NoFeatures NodeDegree Fragmented-k1 Fragmented-k2 Fragmented-k3 FiedlerFragmentation BandpassFiltering-hi BandpassFiltering-mid BandpassFiltering-lo RandomNodeFeatures RandomEdgeRewire; do
     test_dataset ${MODEL} PyG-TUDataset classification DD ${PERTURB}
     test_dataset ${MODEL} PyG-TUDataset classification REDDIT-BINARY ${PERTURB}
     test_dataset ${MODEL} PyG-TUDataset classification REDDIT-MULTI-5K ${PERTURB}

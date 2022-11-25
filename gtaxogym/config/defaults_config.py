@@ -17,6 +17,7 @@ def overwrite_defaults_cfg(cfg):
 
     # Overwrite default dataset name
     cfg.dataset.name = 'none'
+    cfg.dataset.n_bins = 20
 
     # Overwrite default rounding precision
     cfg.round = 5

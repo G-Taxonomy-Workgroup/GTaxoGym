@@ -58,12 +58,10 @@ function test_dataset {
     sbatch run_exp.sh "$script1"
     sbatch run_exp.sh "$script2"
     sbatch run_exp.sh "$script3"
-    sbatch run_exp.sh "$script4"
-    sbatch run_exp.sh "$script5"
 }
 
 for MODEL in default_gcn default_gin; do
   for PERTURB in none NoEdges FullyConnected NoFeatures NodeDegree Fragmented-k1 Fragmented-k2 Fragmented-k3 FiedlerFragmentation BandpassFiltering-hi BandpassFiltering-mid BandpassFiltering-lo RandomNodeFeatures RandomEdgeRewire; do
-    test_dataset ${MODEL} OGB classification_multilabel ogbg-molpcba ${PERTURB}
+    test_dataset ${MODEL} PyG-MalNetTiny classification LocalDegreeProfile ${PERTURB}
   done
 done
