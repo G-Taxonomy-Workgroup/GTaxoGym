@@ -44,7 +44,7 @@ function test_dataset {
       script8="${commonstr} --repeat 1 seed 7 ${common_params} ${gbd_params}"
       script9="${commonstr} --repeat 1 seed 8 ${common_params} ${gbd_params}"
       script10="${commonstr} --repeat 1 seed 9 ${common_params} ${gbd_params}"
-    elif [[ "$dataset_name" == ogbg-molhiv ]] || [[ "$dataset_name" == ogbg-moltox21 ]] || [[ "$dataset_name" == ogbg-molpcba ]]; then
+    elif [[ "$dataset_name" == ogbg-molhiv ]] || [[ "$dataset_name" == ogbg-moltox21 ]] || [[ "$dataset_name" == ogbg-molpcba ]] || [[ "$dataset_name" == PCQM4Mv2-subset ]]; then
       ogb_params="dataset.split_mode standard"
       script1="${commonstr} --repeat 1 seed 0 ${common_params} ${ogb_params}"
       script2="${commonstr} --repeat 1 seed 1 ${common_params} ${ogb_params}"
