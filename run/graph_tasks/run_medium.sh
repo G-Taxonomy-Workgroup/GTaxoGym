@@ -20,7 +20,7 @@ function test_dataset {
 
     elif [[ "$dataset_format" == PyG-PPI ]]; then
       script1="${commonstr} --repeat 5 seed 0 ${common_params} dataset.split_mode standard gnn.head inductive_node"
-      script1="${commonstr} --repeat 5 seed 5 ${common_params} dataset.split_mode standard gnn.head inductive_node"
+      script2="${commonstr} --repeat 5 seed 5 ${common_params} dataset.split_mode standard gnn.head inductive_node"
 
     elif [[ "$dataset_format" == PyG-GNNBenchmarkDataset ]]; then
       gbd_params=""
@@ -32,7 +32,7 @@ function test_dataset {
       fi
       script1="${commonstr} --repeat 5 seed 0 ${common_params} ${gbd_params}"
       script2="${commonstr} --repeat 5 seed 3 ${common_params} ${gbd_params}"
-    elif [[ "$dataset_name" == ogbg-molhiv ]] || [[ "$dataset_name" == ogbg-moltox21 ]] || [[ "$dataset_name" == ogbg-molpcba ]]; then
+    elif [[ "$dataset_name" == ogbg-molhiv ]] || [[ "$dataset_name" == ogbg-moltox21 ]] || [[ "$dataset_name" == ogbg-molpcba ]] || [[ "$dataset_name" == PCQM4Mv2-subset ]]; then
       ogb_params="dataset.split_mode standard"
       script1="${commonstr} --repeat 5 seed 0 ${common_params} ${ogb_params}"
       script2="${commonstr} --repeat 5 seed 3 ${common_params} ${ogb_params}"
