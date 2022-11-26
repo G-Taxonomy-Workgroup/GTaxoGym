@@ -27,7 +27,7 @@ function test_dataset {
         fi
       fi
       script1="${commonstr} --repeat 10 seed 0 ${common_params} ${gbd_params}"
-    elif [[ "$dataset_name" == ogbg-molhiv ]] || [[ "$dataset_name" == ogbg-moltox21 ]] || [[ "$dataset_name" == ogbg-molpcba ]]; then
+    elif [[ "$dataset_name" == ogbg-molhiv ]] || [[ "$dataset_name" == ogbg-moltox21 ]] || [[ "$dataset_name" == ogbg-molpcba ]] || [[ "$dataset_name" == PCQM4Mv2-subset ]]; then
       ogb_params="dataset.split_mode standard"
       script1="${commonstr} --repeat 10 seed 0 ${common_params} ${ogb_params}"
     fi
@@ -37,8 +37,8 @@ function test_dataset {
 }
 
 cd ../..
-for MODEL in default_gatedgcn; do
-  for PERTURB in none NoEdges FullyConnected NoFeatures NodeDegree Fragmented-k1 Fragmented-k2 Fragmented-k3 FiedlerFragmentation BandpassFiltering-hi BandpassFiltering-mid BandpassFiltering-lo; do
+for MODEL in default_gcn default_gin; do
+  for PERTURB in none NoEdges FullyConnected NoFeatures NodeDegree Fragmented-k1 Fragmented-k2 Fragmented-k3 FiedlerFragmentation BandpassFiltering-hi BandpassFiltering-mid BandpassFiltering-lo RandomNodeFeatures RandomEdgeRewire; do
     test_dataset ${MODEL} PyG-TUDataset classification DD ${PERTURB}
     test_dataset ${MODEL} PyG-TUDataset classification ENZYMES ${PERTURB}
     test_dataset ${MODEL} PyG-TUDataset classification PROTEINS ${PERTURB}
