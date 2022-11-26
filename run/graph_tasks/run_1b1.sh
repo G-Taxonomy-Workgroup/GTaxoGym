@@ -51,6 +51,11 @@ function test_dataset {
       script3="${commonstr} --repeat 1 seed 2 ${common_params} ${ogb_params}"
       script4="${commonstr} --repeat 1 seed 3 ${common_params} ${ogb_params}"
       script5="${commonstr} --repeat 1 seed 4 ${common_params} ${ogb_params}"
+      script6="${commonstr} --repeat 1 seed 5 ${common_params} ${ogb_params}"
+      script7="${commonstr} --repeat 1 seed 6 ${common_params} ${ogb_params}"
+      script8="${commonstr} --repeat 1 seed 7 ${common_params} ${ogb_params}"
+      script9="${commonstr} --repeat 1 seed 8 ${common_params} ${ogb_params}"
+      script10="${commonstr} --repeat 1 seed 9 ${common_params} ${ogb_params}"
     fi
 
     echo $script1
@@ -58,6 +63,13 @@ function test_dataset {
     sbatch run_exp.sh "$script1"
     sbatch run_exp.sh "$script2"
     sbatch run_exp.sh "$script3"
+    sbatch run_exp.sh "$script4"
+    sbatch run_exp.sh "$script5"
+    sbatch run_exp.sh "$script6"
+    sbatch run_exp.sh "$script7"
+    sbatch run_exp.sh "$script8"
+    sbatch run_exp.sh "$script9"
+    sbatch run_exp.sh "$script10"
 }
 
 for MODEL in default_gcn default_gin; do
