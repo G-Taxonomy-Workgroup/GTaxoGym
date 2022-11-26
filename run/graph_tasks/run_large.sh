@@ -41,7 +41,7 @@ function test_dataset {
     elif [[ "$dataset_format" == PyG-GNNBenchmarkDataset ]]; then
       gbd_params=""
       if [[ "$dataset_name" == MNIST ]] || [[ "$dataset_name" == CIFAR10 ]] || [[ "$dataset_name" == PATTERN ]] || [[ "$dataset_name" == CLUSTER ]]; then
-        gbd_params=" dataset.split_mode standard"
+        gbd_params="dataset.split_mode standard"
         if [[ "$dataset_name" == PATTERN ]] || [[ "$dataset_name" == CLUSTER ]]; then
           gbd_params="${gbd_params} gnn.head inductive_node model.loss_fun weighted_cross_entropy"
         fi
@@ -56,7 +56,7 @@ function test_dataset {
       script8="${commonstr} --repeat 1 seed 7 ${common_params} ${gbd_params}"
       script9="${commonstr} --repeat 1 seed 8 ${common_params} ${gbd_params}"
       script10="${commonstr} --repeat 1 seed 9 ${common_params} ${gbd_params}"
-    elif [[ "$dataset_name" == ogbg-molhiv ]] || [[ "$dataset_name" == ogbg-moltox21 ]] || [[ "$dataset_name" == ogbg-molpcba ]]; then
+    elif [[ "$dataset_name" == ogbg-molhiv ]] || [[ "$dataset_name" == ogbg-moltox21 ]] || [[ "$dataset_name" == ogbg-molpcba ]] || [[ "$dataset_name" == PCQM4Mv2-subset ]]; then
       ogb_params="dataset.split_mode standard"
       script1="${commonstr} --repeat 1 seed 0 ${common_params} ${ogb_params}"
       script2="${commonstr} --repeat 1 seed 1 ${common_params} ${ogb_params}"
@@ -95,5 +95,6 @@ for MODEL in default_gcn default_gin; do
     test_dataset ${MODEL} PyG-GNNBenchmarkDataset classification CIFAR10 ${PERTURB}
 
     test_dataset ${MODEL} OGB classification_multilabel ogbg-molpcba ${PERTURB}
+    test_dataset ${MODEL} OGB classification PCQM4Mv2-subset ${PERTURB}
   done
 done
