@@ -17,7 +17,8 @@ from torch_geometric.graphgym.config import cfg, set_cfg
 from gtaxogym.loader.gtaxo_master_loader import load_dataset_master
 from gtaxogym.transform.perturbations import BandpassFiltering, \
     ClusterSparsification, FiedlerFragmentation, Fragmented, \
-    WaveletBankFiltering, NodeDegree, FullyConnected, NoFeatures, NoEdges
+    WaveletBankFiltering, NodeDegree, FullyConnected, NoFeatures, NoEdges, \
+    RandomEdgeRewire, RandomNodeFeatures
 
 set_cfg(cfg)
 PERT_FUNC_DICT = {
@@ -36,6 +37,8 @@ PERT_FUNC_DICT = {
     'WaveletBankLow': WaveletBankFiltering(bands=[False, False, True]),
     'WaveletBankMid': WaveletBankFiltering(bands=[False, True, False]),
     'WaveletBankHigh': WaveletBankFiltering(bands=[True, False, False]),
+    'RandomNodeFeatures': RandomNodeFeatures(1, -1, 1),
+    'RandomEdgeRewire': RandomEdgeRewire(0.5, False),
 }
 NUM_PERT = len(PERT_FUNC_DICT)
 
@@ -166,7 +169,7 @@ def plot_individual_perturbations(graph,
         pert_graph = pert_func(graph.clone())
         if pert_name == 'NodeDegree':
             y = torch.argmax(pert_graph.x, dim=-1)
-        elif pert_name == 'NoFeatures':
+        elif pert_name in ['NoFeatures', 'RandomNodeFeatures']:
             y = pert_graph.x[:, 0]
         else:
             y = pert_graph.x[:, ftridx]
@@ -232,7 +235,7 @@ def plot_individual_perturbations(graph,
         fig = plt.figure(figsize=(plot_size, plot_size))
         ax = fig.gca()
 
-        if pert_name.startswith('NodeDegree'):
+        if pert_name in ['NodeDegree', 'RandomNodeFeatures']:
             nx.draw(nxg_pert, pos, node_color=y, cmap=plt.get_cmap('viridis'),
                     node_size=node_size, ax=ax)
         elif pert_name.startswith('NoFeatures'):

@@ -15,10 +15,10 @@ function test_dataset {
     common_params="dataset.format ${dataset_format} ${namestr} dataset.task_type ${task_type} out_dir ${out_dir} perturbation.type ${perturbation}"
 
     if [[ "$dataset_format" == PyG-TUDataset ]] || [[ "$dataset_format" == PyG-MalNetTiny ]] || [[ "$dataset_format" == nx ]]; then
-      script1="${commonstr} ${common_params} run_multiple_splits [0,1,2]"
-      script2="${commonstr} ${common_params} run_multiple_splits [3,4,5]"
-      script3="${commonstr} ${common_params} run_multiple_splits [6,7]"
-      script4="${commonstr} ${common_params} run_multiple_splits [8,9]"
+      script1="${commonstr} ${common_params} run_multiple_splits [0,1,2] gnn.layer_type fc_ginconv"
+      script2="${commonstr} ${common_params} run_multiple_splits [3,4,5] gnn.layer_type fc_ginconv"
+      script3="${commonstr} ${common_params} run_multiple_splits [6,7] gnn.layer_type fc_ginconv"
+      script4="${commonstr} ${common_params} run_multiple_splits [8,9] gnn.layer_type fc_ginconv"
 
     elif [[ "$dataset_format" == PyG-PPI ]]; then
       script1="${commonstr} --repeat 3 seed 0 ${common_params} dataset.split_mode standard gnn.head inductive_node"
@@ -38,7 +38,7 @@ function test_dataset {
       script2="${commonstr} --repeat 3 seed 3 ${common_params} ${gbd_params}"
       script3="${commonstr} --repeat 2 seed 6 ${common_params} ${gbd_params}"
       script4="${commonstr} --repeat 2 seed 8 ${common_params} ${gbd_params}"
-    elif [[ "$dataset_name" == ogbg-molhiv ]] || [[ "$dataset_name" == ogbg-moltox21 ]] || [[ "$dataset_name" == ogbg-molpcba ]]; then
+    elif [[ "$dataset_name" == ogbg-molhiv ]] || [[ "$dataset_name" == ogbg-moltox21 ]] || [[ "$dataset_name" == ogbg-molpcba ]] || [[ "$dataset_name" == PCQM4Mv2-subset ]]; then
       ogb_params="dataset.split_mode standard"
       script1="${commonstr} --repeat 3 seed 0 ${common_params} ${ogb_params}"
       script2="${commonstr} --repeat 3 seed 3 ${common_params} ${ogb_params}"
@@ -54,14 +54,9 @@ function test_dataset {
     sbatch run_exp.sh "$script4"
 }
 
-for MODEL in default_gcn2; do
-  for PERTURB in none NoEdges NoFeatures Fragmented-k1 Fragmented-k2 Fragmented-k3; do
-    test_dataset ${MODEL} PyG-TUDataset classification DD ${PERTURB}
-    test_dataset ${MODEL} PyG-TUDataset classification REDDIT-BINARY ${PERTURB}
+for MODEL in default_gcn default_gin; do
+  for PERTURB in none NoEdges FullyConnected NoFeatures NodeDegree Fragmented-k1 Fragmented-k2 Fragmented-k3 FiedlerFragmentation BandpassFiltering-hi BandpassFiltering-mid BandpassFiltering-lo RandomNodeFeatures RandomEdgeRewire; do
     test_dataset ${MODEL} PyG-TUDataset classification REDDIT-MULTI-5K ${PERTURB}
     test_dataset ${MODEL} PyG-MalNetTiny classification LocalDegreeProfile ${PERTURB}
-
-    test_dataset ${MODEL} PyG-GNNBenchmarkDataset classification MNIST ${PERTURB}
-    test_dataset ${MODEL} PyG-GNNBenchmarkDataset classification CIFAR10 ${PERTURB}
   done
 done

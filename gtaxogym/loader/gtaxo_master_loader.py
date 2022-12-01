@@ -4,6 +4,8 @@ from functools import partial
 from itertools import chain, accumulate
 from typing import List
 
+import numpy as np
+import torch
 import torch_geometric.transforms as T
 from torch_geometric.datasets import (Actor, Amazon, CitationFull, Coauthor,
                                       DeezerEurope, FacebookPagePage, Flickr,
@@ -57,6 +59,38 @@ def load_pyg_single(dataset_class, dataset_dir, pyg_dataset_id, name):
         raise ValueError(f"{pyg_dataset_id} class provides only "
                          f"{pyg_dataset_id} dataset, specified name: {name}")
     return dataset_class(dataset_dir)
+
+
+def quantize_regression_target(dataset, n_bins=20):
+    """ Covert regression task to classification by quantile discretization.
+
+    Args:
+        dataset: PyG Dataset object
+        n_bins: number of quantiles
+
+    Returns:
+        Modified dataset object with classification target y.
+    """
+    from sklearn.preprocessing import KBinsDiscretizer
+
+    train_idx = dataset.split_idxs[0]
+    train_ycont = torch.stack([g.y for g in dataset[train_idx]])
+
+    discretizer = KBinsDiscretizer(n_bins=n_bins, encode='ordinal',
+                                   strategy='quantile')
+    discretizer.fit(train_ycont)
+
+    all_y = dataset.data.y.unsqueeze(-1).numpy()
+    all_y[np.isnan(all_y)] = -1.
+    ydisc = discretizer.transform(all_y)
+    dataset.data.y = torch.from_numpy(ydisc).long().squeeze()
+
+    # Check.
+    # train_ydisc = torch.stack([g.y for g in dataset[train_idx]])
+    # print(np.histogram(train_ydisc.numpy(), bins=n_bins))
+    # print(np.histogram(dataset.data.y.numpy(), bins=n_bins))
+
+    return dataset
 
 
 @register_loader('gtaxo-master')
@@ -169,10 +203,9 @@ def load_dataset_master(format, name, dataset_dir):
         dataset = load_pyg(name, dataset_dir)
 
     elif format == 'OGB':
-        # GraphGym default loader for OGB formatted data.
-        dataset = load_ogb(name.replace('_', '-'), dataset_dir)
-
         if name.startswith('ogbg-'):
+            # GraphGym default loader for OGB formatted data.
+            dataset = load_ogb(name.replace('_', '-'), dataset_dir)
             # Workaround: Need to set data splits aside because the way they
             # are set in dataset.data breaks iterating over the dataset.
             split_names = [
@@ -191,6 +224,19 @@ def load_dataset_master(format, name, dataset_dir):
                     logging.warning(
                         'Will use OGB Atom and Bond Encoders, this may not be '
                         'desirable in this project, double check the config!')
+        elif name.startswith('PCQM4Mv2-'):
+            subset = name.split('-', 1)[1]
+            dataset = preformat_OGB_PCQM4Mv2(dataset_dir, subset)
+            dataset = quantize_regression_target(dataset, n_bins=cfg.dataset.n_bins)
+            dataset.name = name
+            ogbg_splits = dataset.split_idxs
+            if (not cfg.dataset.node_encoder) and (not cfg.dataset.edge_encoder):
+                # One-hot encode atoms and bonds as a pre-transform.
+                pre_transform_in_memory(dataset, ogb_molecular_encoding)
+            else:
+                logging.warning(
+                    'Will use OGB Atom and Bond Encoders, this may not be '
+                    'desirable in this project, double check the config!')
         else:
             # Special handling of data splits may be needed for other datasets.
             raise ValueError(f"Unsupported OGB dataset: {name}")
@@ -217,7 +263,7 @@ def load_dataset_master(format, name, dataset_dir):
                 "Only 'standard' splits are supported for GNNBenchmarkDataset")
         set_dataset_splits(dataset, dataset.split_idxs)
         delattr(dataset, 'split_idxs')
-    elif name.startswith('ogbg-'):
+    elif name.startswith('ogbg-') or name.startswith('PCQM4Mv2-'):
         if cfg.dataset.split_mode != 'standard':
             raise ValueError(
                 "Only 'standard' splits are supported for OGB datasets")
@@ -393,4 +439,60 @@ def preformat_WikiCS(dataset_dir):
     delattr(dataset.data, 'stopping_mask')
     set_dataset_attr(dataset, 'test_mask', new_test_mask, len(new_test_mask))
 
+    return dataset
+
+
+def preformat_OGB_PCQM4Mv2(dataset_dir, name):
+    """Load and preformat PCQM4Mv2 from OGB LSC.
+    OGB-LSC provides 4 data index splits:
+    2 with labeled molecules: 'train', 'valid' meant for training and dev
+    2 unlabeled: 'test-dev', 'test-challenge' for the LSC challenge submission
+    We will take random 150k from 'train' and make it a validation set and
+    use the original 'valid' as our testing set.
+    Note: PygPCQM4Mv2Dataset requires rdkit
+    Args:
+        dataset_dir: path where to store the cached dataset
+        name: select 'subset' or 'full' version of the training set
+    Returns:
+        PyG dataset object
+    """
+    try:
+        # Load locally to avoid RDKit dependency until necessary.
+        from ogb.lsc import PygPCQM4Mv2Dataset
+    except Exception as e:
+        logging.error('ERROR: Failed to import PygPCQM4Mv2Dataset, '
+                      'make sure RDKit is installed.')
+        raise e
+
+    import torch
+    from numpy.random import default_rng
+
+    dataset = PygPCQM4Mv2Dataset(root=dataset_dir)
+    split_idx = dataset.get_idx_split()
+
+    rng = default_rng(seed=42)
+    train_idx = rng.permutation(split_idx['train'].numpy())
+    train_idx = torch.from_numpy(train_idx)
+
+    # Leave out 150k graphs for a new validation set.
+    valid_idx, train_idx = train_idx[:150000], train_idx[150000:]
+    if name == 'full':
+        split_idxs = [train_idx,  # Subset of original 'train'.
+                      valid_idx,  # Subset of original 'train' as validation set.
+                      split_idx['valid']  # The original 'valid' as testing set.
+                      ]
+    elif name == 'subset':
+        # Further subset the training set for faster debugging.
+        subset_ratio = 0.1
+        subtrain_idx = train_idx[:int(subset_ratio * len(train_idx))]
+        subvalid_idx = valid_idx[:50000]
+        subtest_idx = split_idx['valid']  # The original 'valid' as testing set.
+        dataset = dataset[torch.cat([subtrain_idx, subvalid_idx, subtest_idx])]
+        n1, n2, n3 = len(subtrain_idx), len(subvalid_idx), len(subtest_idx)
+        split_idxs = [list(range(n1)),
+                      list(range(n1, n1 + n2)),
+                      list(range(n1 + n2, n1 + n2 + n3))]
+    else:
+        raise ValueError(f'Unexpected OGB PCQM4Mv2 subset choice: {name}')
+    dataset.split_idxs = split_idxs
     return dataset
